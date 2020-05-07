@@ -1,0 +1,2414 @@
+﻿{
+    "Gear": [
+        {
+            "Name": "LONGSTRIDER BOOTS",
+            "Potential": "170",
+            "Mark": "NATURE",
+            "Type": "BOOTS",
+            "Health": "3361",
+            "Attack": "4621",
+            "Defense": "5041",
+            "Magic": "3781"
+        },
+        {
+            "Name": "PERIAPT OF FLAMES",
+            "Potential": "203",
+            "Mark": "DRAGON",
+            "Type": "TALISMAN",
+            "Health": "5418",
+            "Attack": "6181",
+            "Defense": "4150",
+            "Magic": "4457"
+        },
+        {
+            "Name": "RING OF AVARICE",
+            "Potential": "202",
+            "Mark": "DRAGON",
+            "Type": "RING",
+            "Health": "4067",
+            "Attack": "5445",
+            "Defense": "6070",
+            "Magic": "4419"
+        },
+        {
+            "Name": "WAR-FORGED STOMPERS",
+            "Potential": "203",
+            "Mark": "DRAGON",
+            "Type": "BOOTS",
+            "Health": "4200",
+            "Attack": "4400",
+            "Defense": "5488",
+            "Magic": "6070"
+        },
+        {
+            "Name": "FIRE-FORGED CLAWS",
+            "Potential": "202",
+            "Mark": "DRAGON",
+            "Type": "GLOVES",
+            "Health": "4283",
+            "Attack": "5484",
+            "Defense": "5898",
+            "Magic": "4334"
+        },
+        {
+            "Name": "CINDERLORD’S CROWN",
+            "Potential": "202",
+            "Mark": "DRAGON",
+            "Type": "HELMET",
+            "Health": "4137",
+            "Attack": "4400",
+            "Defense": "5473",
+            "Magic": "6100"
+        },
+        {
+            "Name": "CINDERLORD’S CARAPACE",
+            "Potential": "203",
+            "Mark": "DRAGON",
+            "Type": "ARMOR",
+            "Health": "5324",
+            "Attack": "6138",
+            "Defense": "4187",
+            "Magic": "4460"
+        },
+        {
+            "Name": "ONI TOTEM",
+            "Potential": "202",
+            "Mark": "SHADOW",
+            "Type": "TALISMAN",
+            "Health": "4334",
+            "Attack": "5384",
+            "Defense": "5928",
+            "Magic": "4457"
+        },
+        {
+            "Name": "ENT HEART PENDANT",
+            "Potential": "150",
+            "Mark": "NATURE",
+            "Type": "NECKLACE",
+            "Health": "4108",
+            "Attack": "4482",
+            "Defense": "2988",
+            "Magic": "3361"
+        },
+        {
+            "Name": "DUAL FORCE RING",
+            "Potential": "158",
+            "Mark": "NATURE",
+            "Type": "RING",
+            "Health": "3130",
+            "Attack": "3521",
+            "Defense": "4304",
+            "Magic": "4695"
+        },
+        {
+            "Name": "DEMONSEED",
+            "Potential": "160",
+            "Mark": "NATURE",
+            "Type": "TALISMAN",
+            "Health": "3183",
+            "Attack": "4377",
+            "Defense": "4775",
+            "Magic": "3581"
+        },
+        {
+            "Name": "FOREST GUARDIAN SPIRITPLATE",
+            "Potential": "161",
+            "Mark": "NATURE",
+            "Type": "ARMOR",
+            "Health": "3201",
+            "Attack": "4401",
+            "Defense": "4802",
+            "Magic": "3601"
+        },
+        {
+            "Name": "FOREST GUARDIAN GLOVES",
+            "Potential": "152",
+            "Mark": "NATURE",
+            "Type": "GLOVES",
+            "Health": "3006",
+            "Attack": "3381",
+            "Defense": "4133",
+            "Magic": "4508"
+        },
+        {
+            "Name": "FOREST GUARDIAN BOOTS",
+            "Potential": "150",
+            "Mark": "NATURE",
+            "Type": "BOOTS",
+            "Health": "4084",
+            "Attack": "4455",
+            "Defense": "2970",
+            "Magic": "3341"
+        },
+        {
+            "Name": "HOOD OF CLAIRVOYANCE",
+            "Potential": "174",
+            "Mark": "NATURE",
+            "Type": "HELMET",
+            "Health": "4743",
+            "Attack": "5175",
+            "Defense": "3450",
+            "Magic": "3881"
+        },
+        {
+            "Name": "STONE LABYRINTH ARMOR",
+            "Potential": "174",
+            "Mark": "NATURE",
+            "Type": "ARMOR",
+            "Health": "3450",
+            "Attack": "4743",
+            "Defense": "5175",
+            "Magic": "3881"
+        },
+        {
+            "Name": "GRAPEVINE GLOVES",
+            "Potential": "174",
+            "Mark": "NATURE",
+            "Type": "GLOVES",
+            "Health": "3432",
+            "Attack": "3861",
+            "Defense": "4719",
+            "Magic": "5148"
+        },
+        {
+            "Name": "PATH SEEKERS",
+            "Potential": "174",
+            "Mark": "NATURE",
+            "Type": "BOOTS",
+            "Health": "4719",
+            "Attack": "5148",
+            "Defense": "3432",
+            "Magic": "3861"
+        },
+        {
+            "Name": "GUIDING FIRE",
+            "Potential": "174",
+            "Mark": "NATURE",
+            "Type": "TALISMAN",
+            "Health": "3450",
+            "Attack": "4743",
+            "Defense": "5175",
+            "Magic": "3881"
+        },
+        {
+            "Name": "RING OF LABYRINTH",
+            "Potential": "172",
+            "Mark": "NATURE",
+            "Type": "RING",
+            "Health": "3414",
+            "Attack": "3841",
+            "Defense": "4695",
+            "Magic": "5121"
+        },
+        {
+            "Name": "PATHSEEKER PENDANT",
+            "Potential": "174",
+            "Mark": "NATURE",
+            "Type": "NECKLACE",
+            "Health": "4719",
+            "Attack": "5148",
+            "Defense": "3432",
+            "Magic": "3861"
+        },
+        {
+            "Name": "NECKLACE OF SERENDIPITY",
+            "Potential": "203",
+            "Mark": "SHADOW",
+            "Type": "NECKLACE",
+            "Health": "5341",
+            "Attack": "6167",
+            "Defense": "4227",
+            "Magic": "4487"
+        },
+        {
+            "Name": "RING OF FOLKLORE",
+            "Potential": "202",
+            "Mark": "SHADOW",
+            "Type": "RING",
+            "Health": "4266",
+            "Attack": "4356",
+            "Defense": "5473",
+            "Magic": "5892"
+        },
+        {
+            "Name": "CLAWS OF ONI",
+            "Potential": "203",
+            "Mark": "SHADOW",
+            "Type": "BOOTS",
+            "Health": "5500",
+            "Attack": "6200",
+            "Defense": "4116",
+            "Magic": "4378"
+        },
+        {
+            "Name": "ONI GRABBERS",
+            "Potential": "202",
+            "Mark": "SHADOW",
+            "Type": "GLOVES",
+            "Health": "4084",
+            "Attack": "4487",
+            "Defense": "5407",
+            "Magic": "6009"
+        },
+        {
+            "Name": "ONI WARRIOR ARMOR",
+            "Potential": "202",
+            "Mark": "SHADOW",
+            "Type": "ARMOR",
+            "Health": "4141",
+            "Attack": "5346",
+            "Defense": "6082",
+            "Magic": "4460"
+        },
+        {
+            "Name": "ONI HORNS",
+            "Potential": "202",
+            "Mark": "SHADOW",
+            "Type": "HELMET",
+            "Health": "5418",
+            "Attack": "6100",
+            "Defense": "4179",
+            "Magic": "4400"
+        },
+        {
+            "Name": "FLIGHT OF VICTORY NECKLACE",
+            "Potential": "202",
+            "Mark": "SACRED",
+            "Type": "NECKLACE",
+            "Health": "3980",
+            "Attack": "5473",
+            "Defense": "6076",
+            "Magic": "4518"
+        },
+        {
+            "Name": "TRIUMPHANT THUMP RING",
+            "Potential": "203",
+            "Mark": "SACRED",
+            "Type": "RING",
+            "Health": "5500",
+            "Attack": "6269",
+            "Defense": "4075",
+            "Magic": "4356"
+        },
+        {
+            "Name": "THE SACRED CLAW",
+            "Potential": "200",
+            "Mark": "SACRED",
+            "Type": "TALISMAN",
+            "Health": "3940",
+            "Attack": "4500",
+            "Defense": "5274",
+            "Magic": "6169"
+        },
+        {
+            "Name": "TRIUMPHANT WALK BOOTS",
+            "Potential": "203",
+            "Mark": "SACRED",
+            "Type": "BOOTS",
+            "Health": "4075",
+            "Attack": "5422",
+            "Defense": "6269",
+            "Magic": "4455"
+        },
+        {
+            "Name": "GLOVES OF TOTAL TRIUMPH",
+            "Potential": "201",
+            "Mark": "SACRED",
+            "Type": "GLOVES",
+            "Health": "5346",
+            "Attack": "6112",
+            "Defense": "4166",
+            "Magic": "4422"
+        },
+        {
+            "Name": "TOTAL TRIUMPH CARAPACE",
+            "Potential": "202",
+            "Mark": "SACRED",
+            "Type": "ARMOR",
+            "Health": "4166",
+            "Attack": "4444",
+            "Defense": "5390",
+            "Magic": "6088"
+        },
+        {
+            "Name": "TRIUMPHANT CROWN",
+            "Potential": "201",
+            "Mark": "SACRED",
+            "Type": "HELMET",
+            "Health": "4116",
+            "Attack": "5506",
+            "Defense": "5940",
+            "Magic": "4374"
+        },
+        {
+            "Name": "WILDERNESS QUEEN NECKLACE",
+            "Potential": "191",
+            "Mark": "NATURE",
+            "Type": "NECKLACE",
+            "Health": "5174",
+            "Attack": "5683",
+            "Defense": "3842",
+            "Magic": "4304"
+        },
+        {
+            "Name": "RING OF PRIMEVAL FOREST",
+            "Potential": "191",
+            "Mark": "NATURE",
+            "Type": "RING",
+            "Health": "3939",
+            "Attack": "4166",
+            "Defense": "5263",
+            "Magic": "5597"
+        },
+        {
+            "Name": "FOREST FOLKS HORN",
+            "Potential": "191",
+            "Mark": "NATURE",
+            "Type": "TALISMAN",
+            "Health": "3952",
+            "Attack": "5210",
+            "Defense": "5677",
+            "Magic": "4171"
+        },
+        {
+            "Name": "BOOTS OF WILDERNESS",
+            "Potential": "191",
+            "Mark": "NATURE",
+            "Type": "BOOTS",
+            "Health": "5378",
+            "Attack": "5706",
+            "Defense": "3877",
+            "Magic": "4067"
+        },
+        {
+            "Name": "GLOVES OF WILDERNESS",
+            "Potential": "191",
+            "Mark": "NATURE",
+            "Type": "GLOVES",
+            "Health": "3861",
+            "Attack": "4322",
+            "Defense": "5158",
+            "Magic": "5706"
+        },
+        {
+            "Name": "WILDERNESS WARRIOR ARMOR",
+            "Potential": "191",
+            "Mark": "NATURE",
+            "Type": "ARMOR",
+            "Health": "3980",
+            "Attack": "5380",
+            "Defense": "5505",
+            "Magic": "4187"
+        },
+        {
+            "Name": "SACRED STAG CROWN",
+            "Potential": "191",
+            "Mark": "NATURE",
+            "Type": "HELMET",
+            "Health": "4998",
+            "Attack": "5717",
+            "Defense": "3960",
+            "Magic": "4287"
+        },
+        {
+            "Name": "MALACHITE CRYSTAL PENDANT",
+            "Potential": "189",
+            "Mark": "NECRO",
+            "Type": "NECKLACE",
+            "Health": "3758",
+            "Attack": "4347",
+            "Defense": "5112",
+            "Magic": "5583"
+        },
+        {
+            "Name": "MALACHITE SKULL RING",
+            "Potential": "189",
+            "Mark": "NECRO",
+            "Type": "RING",
+            "Health": "3770",
+            "Attack": "5247",
+            "Defense": "5572",
+            "Magic": "4124"
+        },
+        {
+            "Name": "GOLDEN REVIVAL NECKLACE",
+            "Potential": "187",
+            "Mark": "LAVA",
+            "Type": "NECKLACE",
+            "Health": "3582",
+            "Attack": "5174",
+            "Defense": "5488",
+            "Magic": "4304"
+        },
+        {
+            "Name": "INNER FLAME RING",
+            "Potential": "187",
+            "Mark": "LAVA",
+            "Type": "RING",
+            "Health": "5100",
+            "Attack": "5672",
+            "Defense": "3678",
+            "Magic": "4158"
+        },
+        {
+            "Name": "PHOENIX FEATHER",
+            "Potential": "187",
+            "Mark": "LAVA",
+            "Type": "TALISMAN",
+            "Health": "3546",
+            "Attack": "4300",
+            "Defense": "4975",
+            "Magic": "5759"
+        },
+        {
+            "Name": "CARVED FLAMING BOOTS",
+            "Potential": "187",
+            "Mark": "LAVA",
+            "Type": "BOOTS",
+            "Health": "3678",
+            "Attack": "5300",
+            "Defense": "5561",
+            "Magic": "4059"
+        },
+        {
+            "Name": "CARVED FLAMING GLOVES",
+            "Potential": "187",
+            "Mark": "LAVA",
+            "Type": "GLOVES",
+            "Health": "4950",
+            "Attack": "5711",
+            "Defense": "3670",
+            "Magic": "4304"
+        },
+        {
+            "Name": "PHOENIX PALADIN ARMOR",
+            "Potential": "187",
+            "Mark": "LAVA",
+            "Type": "ARMOR",
+            "Health": "3670",
+            "Attack": "4141",
+            "Defense": "4998",
+            "Magic": "5765"
+        },
+        {
+            "Name": "FLAMING CROWN",
+            "Potential": "187",
+            "Mark": "LAVA",
+            "Type": "HELMET",
+            "Health": "3724",
+            "Attack": "5205",
+            "Defense": "5445",
+            "Magic": "4166"
+        },
+        {
+            "Name": "SCARLET CHOKER",
+            "Potential": "187",
+            "Mark": "VENOM",
+            "Type": "NECKLACE",
+            "Health": "5075",
+            "Attack": "5572",
+            "Defense": "3724",
+            "Magic": "4204"
+        },
+        {
+            "Name": "VENOM VIOLENCE RING",
+            "Potential": "186",
+            "Mark": "VENOM",
+            "Type": "RING",
+            "Health": "3737",
+            "Attack": "4067",
+            "Defense": "5164",
+            "Magic": "5499"
+        },
+        {
+            "Name": "SCORPIO FAMILIAR",
+            "Potential": "186",
+            "Mark": "VENOM",
+            "Type": "TALISMAN",
+            "Health": "3842",
+            "Attack": "5100",
+            "Defense": "5672",
+            "Magic": "3873"
+        },
+        {
+            "Name": "BOOTS OF BITTERNESS",
+            "Potential": "186",
+            "Mark": "VENOM",
+            "Type": "BOOTS",
+            "Health": "5268",
+            "Attack": "5600",
+            "Defense": "3674",
+            "Magic": "3960"
+        },
+        {
+            "Name": "TAINTED GLOVES",
+            "Potential": "186",
+            "Mark": "VENOM",
+            "Type": "GLOVES",
+            "Health": "4950",
+            "Attack": "4309",
+            "Defense": "3670",
+            "Magic": "5606"
+        },
+        {
+            "Name": "SCARLET SCORPIO ARMOR",
+            "Potential": "186",
+            "Mark": "VENOM",
+            "Type": "ARMOR",
+            "Health": "3770",
+            "Attack": "5353",
+            "Defense": "5390",
+            "Magic": "3976"
+        },
+        {
+            "Name": "VENOM VEIL",
+            "Potential": "187",
+            "Mark": "VENOM",
+            "Type": "HELMET",
+            "Health": "4900",
+            "Attack": "5606",
+            "Defense": "3762",
+            "Magic": "4266"
+        },
+        {
+            "Name": "BLADE OF HAVOC",
+            "Potential": "187",
+            "Mark": "DEATH",
+            "Type": "MAIN HAND",
+            "Health": "4179",
+            "Attack": "5100",
+            "Defense": "5800",
+            "Magic": "3596"
+        },
+        {
+            "Name": "GRIM GRIP NECKLACE",
+            "Potential": "187",
+            "Mark": "DEATH",
+            "Type": "NECKLACE",
+            "Health": "3747",
+            "Attack": "4246",
+            "Defense": "5013",
+            "Magic": "5555"
+        },
+        {
+            "Name": "GRIM REAPER RING",
+            "Potential": "186",
+            "Mark": "DEATH",
+            "Type": "RING",
+            "Health": "3670",
+            "Attack": "5148",
+            "Defense": "5555",
+            "Magic": "4026"
+        },
+        {
+            "Name": "WHIP OF WEAKNESS",
+            "Potential": "186",
+            "Mark": "DEATH",
+            "Type": "TALISMAN",
+            "Health": "5024",
+            "Attack": "5484",
+            "Defense": "3842",
+            "Magic": "4145"
+        },
+        {
+            "Name": "BOOTS OF BEREAVEMENT",
+            "Potential": "185",
+            "Mark": "DEATH",
+            "Type": "BOOTS",
+            "Health": "3700",
+            "Attack": "4100",
+            "Defense": "4998",
+            "Magic": "5561"
+        },
+        {
+            "Name": "GRIM GRIPS",
+            "Potential": "187",
+            "Mark": "DEATH",
+            "Type": "GLOVES",
+            "Health": "3670",
+            "Attack": "5274",
+            "Defense": "5407",
+            "Magic": "4137"
+        },
+        {
+            "Name": "GRIMLORD ARMOR",
+            "Potential": "187",
+            "Mark": "DEATH",
+            "Type": "ARMOR",
+            "Health": "5029",
+            "Attack": "5505",
+            "Defense": "3667",
+            "Magic": "4261"
+        },
+        {
+            "Name": "GRIMLORD CROWN",
+            "Potential": "186",
+            "Mark": "DEATH",
+            "Type": "HELMET",
+            "Health": "3645",
+            "Attack": "4000",
+            "Defense": "5351",
+            "Magic": "5500"
+        },
+        {
+            "Name": "WAR EAGLE PENDANT",
+            "Potential": "184",
+            "Mark": "MYTH",
+            "Type": "NECKLACE",
+            "Health": "3643",
+            "Attack": "4099",
+            "Defense": "5009",
+            "Magic": "5465"
+        },
+        {
+            "Name": "SPIRIT TAMER RING",
+            "Potential": "186",
+            "Mark": "MYTH",
+            "Type": "RING",
+            "Health": "3663",
+            "Attack": "5037",
+            "Defense": "5495",
+            "Magic": "4121"
+        },
+        {
+            "Name": "GOBLET OF SPIRITS",
+            "Potential": "184",
+            "Mark": "MYTH",
+            "Type": "TALISMAN",
+            "Health": "5009",
+            "Attack": "5465",
+            "Defense": "3643",
+            "Magic": "4099"
+        },
+        {
+            "Name": "PHANTOM FLAME",
+            "Potential": "189",
+            "Mark": "NECRO",
+            "Type": "TALISMAN",
+            "Health": "5122",
+            "Attack": "5583",
+            "Defense": "3853",
+            "Magic": "4255"
+        },
+        {
+            "Name": "PHANTOM STOMPERS",
+            "Potential": "189",
+            "Mark": "NECRO",
+            "Type": "BOOTS",
+            "Health": "3800",
+            "Attack": "4200",
+            "Defense": "5194",
+            "Magic": "5572"
+        },
+        {
+            "Name": "GREEN FANG GLOVES",
+            "Potential": "189",
+            "Mark": "NECRO",
+            "Type": "GLOVES",
+            "Health": "3785",
+            "Attack": "5284",
+            "Defense": "5505",
+            "Magic": "4137"
+        },
+        {
+            "Name": "MALACHITE PHANTOM ARMOR",
+            "Potential": "189",
+            "Mark": "NECRO",
+            "Type": "ARMOR",
+            "Health": "5127",
+            "Attack": "5544",
+            "Defense": "3689",
+            "Magic": "4360"
+        },
+        {
+            "Name": "MALACHITE CROWN",
+            "Potential": "189",
+            "Mark": "NECRO",
+            "Type": "HELMET",
+            "Health": "3743",
+            "Attack": "4100",
+            "Defense": "5373",
+            "Magic": "5600"
+        },
+        {
+            "Name": "FEARLESS WALKERS",
+            "Potential": "184",
+            "Mark": "MYTH",
+            "Type": "BOOTS",
+            "Health": "3643",
+            "Attack": "4099",
+            "Defense": "5009",
+            "Magic": "5465"
+        },
+        {
+            "Name": "GLOVES OF DEXTERITY",
+            "Potential": "186",
+            "Mark": "MYTH",
+            "Type": "GLOVES",
+            "Health": "3663",
+            "Attack": "5037",
+            "Defense": "5495",
+            "Magic": "4121"
+        },
+        {
+            "Name": "SPIRIT MASTER ARMOR",
+            "Potential": "186",
+            "Mark": "MYTH",
+            "Type": "ARMOR",
+            "Health": "5037",
+            "Attack": "5495",
+            "Defense": "3663",
+            "Magic": "4121"
+        },
+        {
+            "Name": "VICTORY VISOR",
+            "Potential": "184",
+            "Mark": "MYTH",
+            "Type": "HELMET",
+            "Health": "3643",
+            "Attack": "4099",
+            "Defense": "5009",
+            "Magic": "5465"
+        },
+        {
+            "Name": "HUNTER’S PRIDE PENDANT",
+            "Potential": "184",
+            "Mark": "ICE",
+            "Type": "NECKLACE",
+            "Health": "3743",
+            "Attack": "4141",
+            "Defense": "4910",
+            "Magic": "5478"
+        },
+        {
+            "Name": "BROKEN ICE RING",
+            "Potential": "185",
+            "Mark": "ICE",
+            "Type": "RING",
+            "Health": "3663",
+            "Attack": "5049",
+            "Defense": "5544",
+            "Magic": "4018"
+        },
+        {
+            "Name": "MAMMOTH SKULL",
+            "Potential": "184",
+            "Mark": "ICE",
+            "Type": "TALISMAN",
+            "Health": "5013",
+            "Attack": "5473",
+            "Defense": "3645",
+            "Magic": "4141"
+        },
+        {
+            "Name": "THICK ICE STOMPERS",
+            "Potential": "183",
+            "Mark": "ICE",
+            "Type": "BOOTS",
+            "Health": "3652",
+            "Attack": "4100",
+            "Defense": "4915",
+            "Magic": "5473"
+        },
+        {
+            "Name": "ICE HUNT GLOVES",
+            "Potential": "186",
+            "Mark": "ICE",
+            "Type": "GLOVES",
+            "Health": "3663",
+            "Attack": "5200",
+            "Defense": "5396",
+            "Magic": "4124"
+        },
+        {
+            "Name": "MAMMOTH HUNTER ARMOR",
+            "Potential": "186",
+            "Mark": "ICE",
+            "Type": "ARMOR",
+            "Health": "4925",
+            "Attack": "5499",
+            "Defense": "3564",
+            "Magic": "4356"
+        },
+        {
+            "Name": "MAMMOTH HUNTER CROWN",
+            "Potential": "184",
+            "Mark": "ICE",
+            "Type": "HELMET",
+            "Health": "3546",
+            "Attack": "4000",
+            "Defense": "5247",
+            "Magic": "5467"
+        },
+        {
+            "Name": "BATTLE BELL",
+            "Potential": "183",
+            "Mark": "BEAST",
+            "Type": "NECKLACE",
+            "Health": "4975",
+            "Attack": "5473",
+            "Defense": "3528",
+            "Magic": "4200"
+        },
+        {
+            "Name": "IVORY HORNS RING",
+            "Potential": "183",
+            "Mark": "BEAST",
+            "Type": "RING",
+            "Health": "3737",
+            "Attack": "3861",
+            "Defense": "5148",
+            "Magic": "5390"
+        },
+        {
+            "Name": "HANK OF SAFETY",
+            "Potential": "184",
+            "Mark": "BEAST",
+            "Type": "TALISMAN",
+            "Health": "3724",
+            "Attack": "5000",
+            "Defense": "5643",
+            "Magic": "3861"
+        },
+        {
+            "Name": "BULL STOMPERS",
+            "Potential": "184",
+            "Mark": "BEAST",
+            "Type": "BOOTS",
+            "Health": "5247",
+            "Attack": "5400",
+            "Defense": "3663",
+            "Magic": "3920"
+        },
+        {
+            "Name": "BULL GLOVES",
+            "Potential": "183",
+            "Mark": "BEAST",
+            "Type": "GLOVES",
+            "Health": "4802",
+            "Attack": "4300",
+            "Defense": "3465",
+            "Magic": "5600"
+        },
+        {
+            "Name": "BATTLE BULL ARMOR",
+            "Potential": "184",
+            "Mark": "BEAST",
+            "Type": "ARMOR",
+            "Health": "3663",
+            "Attack": "5252",
+            "Defense": "5390",
+            "Magic": "3960"
+        },
+        {
+            "Name": "BATTLE BULL CROWN",
+            "Potential": "185",
+            "Mark": "BEAST",
+            "Type": "HELMET",
+            "Health": "4850",
+            "Attack": "5600",
+            "Defense": "3564",
+            "Magic": "4257"
+        },
+        {
+            "Name": "WIND CRYSTAL PENDANT",
+            "Potential": "183",
+            "Mark": "WIND",
+            "Type": "NECKLACE",
+            "Health": "3500",
+            "Attack": "5064",
+            "Defense": "5390",
+            "Magic": "4200"
+        },
+        {
+            "Name": "RING OF ATMOSPHERES",
+            "Potential": "183",
+            "Mark": "WIND",
+            "Type": "RING",
+            "Health": "4975",
+            "Attack": "5488",
+            "Defense": "3625",
+            "Magic": "4063"
+        },
+        {
+            "Name": "DEADLY TWINS",
+            "Potential": "183",
+            "Mark": "WIND",
+            "Type": "TALISMAN",
+            "Health": "3500",
+            "Attack": "4158",
+            "Defense": "4866",
+            "Magic": "5643"
+        },
+        {
+            "Name": "ZEPHYR WALKERS",
+            "Potential": "182",
+            "Mark": "WIND",
+            "Type": "BOOTS",
+            "Health": "3571",
+            "Attack": "5132",
+            "Defense": "5378",
+            "Magic": "3920"
+        },
+        {
+            "Name": "WIND WHISPER GLOVES",
+            "Potential": "183",
+            "Mark": "WIND",
+            "Type": "GLOVES",
+            "Health": "4861",
+            "Attack": "5544",
+            "Defense": "3528",
+            "Magic": "4175"
+        },
+        {
+            "Name": "ZEPHYROS ARMOR",
+            "Potential": "184",
+            "Mark": "WIND",
+            "Type": "ARMOR",
+            "Health": "3607",
+            "Attack": "4059",
+            "Defense": "4975",
+            "Magic": "5586"
+        },
+        {
+            "Name": "VEIL OF WIND",
+            "Potential": "183",
+            "Mark": "WIND",
+            "Type": "HELMET",
+            "Health": "3711",
+            "Attack": "5064",
+            "Defense": "5319",
+            "Magic": "4059"
+        },
+        {
+            "Name": "VAMPIRE CLAW NECKLACE",
+            "Potential": "182",
+            "Mark": "HEX",
+            "Type": "NECKLACE",
+            "Health": "4963",
+            "Attack": "5415",
+            "Defense": "3610",
+            "Magic": "4061"
+        },
+        {
+            "Name": "CRIMSON COUNT RING",
+            "Potential": "182",
+            "Mark": "HEX",
+            "Type": "RING",
+            "Health": "3610",
+            "Attack": "4061",
+            "Defense": "4963",
+            "Magic": "5415"
+        },
+        {
+            "Name": "VAMPIRIC STING",
+            "Potential": "183",
+            "Mark": "HEX",
+            "Type": "TALISMAN",
+            "Health": "3623",
+            "Attack": "4982",
+            "Defense": "5435",
+            "Magic": "4076"
+        },
+        {
+            "Name": "VAMPIRIC BOOTS",
+            "Potential": "182",
+            "Mark": "HEX",
+            "Type": "BOOTS",
+            "Health": "4963",
+            "Attack": "5415",
+            "Defense": "3610",
+            "Magic": "4061"
+        },
+        {
+            "Name": "BAT GLOVES",
+            "Potential": "182",
+            "Mark": "HEX",
+            "Type": "GLOVES",
+            "Health": "3604",
+            "Attack": "4054",
+            "Defense": "4955",
+            "Magic": "5405"
+        },
+        {
+            "Name": "CRIMSON COUNT CARAPACE",
+            "Potential": "182",
+            "Mark": "HEX",
+            "Type": "ARMOR",
+            "Health": "3610",
+            "Attack": "4963",
+            "Defense": "5415",
+            "Magic": "4061"
+        },
+        {
+            "Name": "BLACK BAT",
+            "Potential": "183",
+            "Mark": "HEX",
+            "Type": "HELMET",
+            "Health": "4982",
+            "Attack": "5435",
+            "Defense": "3623",
+            "Magic": "4076"
+        },
+        {
+            "Name": "SKYROAR NECKLACE",
+            "Potential": "182",
+            "Mark": "NOBLE",
+            "Type": "NECKLACE",
+            "Health": "3610",
+            "Attack": "4963",
+            "Defense": "5415",
+            "Magic": "4061"
+        },
+        {
+            "Name": "WINGED LION RING",
+            "Potential": "182",
+            "Mark": "NOBLE",
+            "Type": "RING",
+            "Health": "4963",
+            "Attack": "5415",
+            "Defense": "3610",
+            "Magic": "4061"
+        },
+        {
+            "Name": "RUNEBOOK OF PEACE",
+            "Potential": "182",
+            "Mark": "NOBLE",
+            "Type": "TALISMAN",
+            "Health": "3610",
+            "Attack": "4061",
+            "Defense": "4963",
+            "Magic": "5415"
+        },
+        {
+            "Name": "MANTICORE WALKERS",
+            "Potential": "181",
+            "Mark": "NOBLE",
+            "Type": "BOOTS",
+            "Health": "3584",
+            "Attack": "4928",
+            "Defense": "5376",
+            "Magic": "4032"
+        },
+        {
+            "Name": "ALABASTER GLOVES",
+            "Potential": "183",
+            "Mark": "NOBLE",
+            "Type": "GLOVES",
+            "Health": "4982",
+            "Attack": "5435",
+            "Defense": "3623",
+            "Magic": "4076"
+        },
+        {
+            "Name": "MANTICORE ARMOR",
+            "Potential": "182",
+            "Mark": "NOBLE",
+            "Type": "ARMOR",
+            "Health": "3604",
+            "Attack": "4054",
+            "Defense": "4955",
+            "Magic": "5405"
+        },
+        {
+            "Name": "IVORY VISOR",
+            "Potential": "182",
+            "Mark": "NOBLE",
+            "Type": "HELMET",
+            "Health": "3610",
+            "Attack": "4963",
+            "Defense": "5415",
+            "Magic": "4061"
+        },
+        {
+            "Name": "TRITON NECKLACE",
+            "Potential": "179",
+            "Mark": "ABYSS",
+            "Type": "NECKLACE",
+            "Health": "3556",
+            "Attack": "4001",
+            "Defense": "4890",
+            "Magic": "5335"
+        },
+        {
+            "Name": "AMULET OF DRACONIC VIGILANCE",
+            "Potential": "203",
+            "Mark": "DRAGON",
+            "Type": "NECKLACE",
+            "Health": "4154",
+            "Attack": "4550",
+            "Defense": "5407",
+            "Magic": "6082"
+        },
+        {
+            "Name": "FOREST GUARDIAN CROWN",
+            "Potential": "164",
+            "Mark": "NATURE",
+            "Type": "HELMET",
+            "Health": "4426",
+            "Attack": "4828",
+            "Defense": "3219",
+            "Magic": "3621"
+        },
+        {
+            "Name": "TRICOLOR SNAKE RING",
+            "Potential": "181",
+            "Mark": "ABYSS",
+            "Type": "RING",
+            "Health": "3574",
+            "Attack": "4914",
+            "Defense": "5361",
+            "Magic": "4021"
+        },
+        {
+            "Name": "TENTACLE TALISMAN",
+            "Potential": "181",
+            "Mark": "ABYSS",
+            "Type": "TALISMAN",
+            "Health": "4939",
+            "Attack": "5388",
+            "Defense": "3592",
+            "Magic": "4041"
+        },
+        {
+            "Name": "ABYSS STOMPERS",
+            "Potential": "181",
+            "Mark": "ABYSS",
+            "Type": "BOOTS",
+            "Health": "3574",
+            "Attack": "4021",
+            "Defense": "4914",
+            "Magic": "5361"
+        },
+        {
+            "Name": "KRAKEN GLOVES",
+            "Potential": "181",
+            "Mark": "ABYSS",
+            "Type": "GLOVES",
+            "Health": "3592",
+            "Attack": "4939",
+            "Defense": "5388",
+            "Magic": "4041"
+        },
+        {
+            "Name": "ATLANTIS ARMOR",
+            "Potential": "181",
+            "Mark": "ABYSS",
+            "Type": "ARMOR",
+            "Health": "4939",
+            "Attack": "5388",
+            "Defense": "3592",
+            "Magic": "4041"
+        },
+        {
+            "Name": "GILLS OF THE ABYSS",
+            "Potential": "181",
+            "Mark": "ABYSS",
+            "Type": "HELMET",
+            "Health": "3592",
+            "Attack": "4041",
+            "Defense": "4939",
+            "Magic": "5388"
+        },
+        {
+            "Name": "THUNDERBEAR NECKLACE",
+            "Potential": "179",
+            "Mark": "THUNDER",
+            "Type": "NECKLACE",
+            "Health": "4866",
+            "Attack": "5308",
+            "Defense": "3539",
+            "Magic": "3981"
+        },
+        {
+            "Name": "THUNDER RULER RING",
+            "Potential": "181",
+            "Mark": "THUNDER",
+            "Type": "RING",
+            "Health": "3592",
+            "Attack": "4041",
+            "Defense": "4939",
+            "Magic": "5388"
+        },
+        {
+            "Name": "THUNDER BALL",
+            "Potential": "181",
+            "Mark": "THUNDER",
+            "Type": "TALISMAN",
+            "Health": "3592",
+            "Attack": "4939",
+            "Defense": "5388",
+            "Magic": "4041"
+        },
+        {
+            "Name": "THUNDERWALK BOOTS",
+            "Potential": "181",
+            "Mark": "THUNDER",
+            "Type": "BOOTS",
+            "Health": "4939",
+            "Attack": "5388",
+            "Defense": "3592",
+            "Magic": "4041"
+        },
+        {
+            "Name": "IRONSTRIKE GLOVES",
+            "Potential": "181",
+            "Mark": "THUNDER",
+            "Type": "GLOVES",
+            "Health": "3574",
+            "Attack": "4021",
+            "Defense": "4914",
+            "Magic": "5361"
+        },
+        {
+            "Name": "THUNDERBEAR ARMOR",
+            "Potential": "182",
+            "Mark": "THUNDER",
+            "Type": "ARMOR",
+            "Health": "3610",
+            "Attack": "4963",
+            "Defense": "5415",
+            "Magic": "4061"
+        },
+        {
+            "Name": "VOLTAGO HORNS",
+            "Potential": "181",
+            "Mark": "THUNDER",
+            "Type": "HELMET",
+            "Health": "4914",
+            "Attack": "5361",
+            "Defense": "3574",
+            "Magic": "4021"
+        },
+        {
+            "Name": "SERPENTER RING",
+            "Potential": "181",
+            "Mark": "DRAGON",
+            "Type": "RING",
+            "Health": "3574",
+            "Attack": "4914",
+            "Defense": "5361",
+            "Magic": "4021"
+        },
+        {
+            "Name": "BASILISK PENDANT",
+            "Potential": "179",
+            "Mark": "DRAGON",
+            "Type": "NECKLACE",
+            "Health": "3556",
+            "Attack": "4001",
+            "Defense": "4890",
+            "Magic": "5335"
+        },
+        {
+            "Name": "RED DRAGON EGG",
+            "Potential": "181",
+            "Mark": "DRAGON",
+            "Type": "TALISMAN",
+            "Health": "4939",
+            "Attack": "5388",
+            "Defense": "3592",
+            "Magic": "4041"
+        },
+        {
+            "Name": "SORCERY STOMPS",
+            "Potential": "181",
+            "Mark": "DRAGON",
+            "Type": "BOOTS",
+            "Health": "3574",
+            "Attack": "4021",
+            "Defense": "4914",
+            "Magic": "5361"
+        },
+        {
+            "Name": "PAWS OF MAGIC",
+            "Potential": "181",
+            "Mark": "DRAGON",
+            "Type": "GLOVES",
+            "Health": "3592",
+            "Attack": "4939",
+            "Defense": "5388",
+            "Magic": "4041"
+        },
+        {
+            "Name": "DRAGON PRIEST ARMOR",
+            "Potential": "181",
+            "Mark": "DRAGON",
+            "Type": "ARMOR",
+            "Health": "4939",
+            "Attack": "5388",
+            "Defense": "3592",
+            "Magic": "4041"
+        },
+        {
+            "Name": "THE DRAGONHORN",
+            "Potential": "181",
+            "Mark": "DRAGON",
+            "Type": "HELMET",
+            "Health": "3592",
+            "Attack": "4041",
+            "Defense": "4939",
+            "Magic": "5388"
+        },
+        {
+            "Name": "NIGHT VISION NECKLACE",
+            "Potential": "179",
+            "Mark": "SHADOW",
+            "Type": "NECKLACE",
+            "Health": "3539",
+            "Attack": "4866",
+            "Defense": "5308",
+            "Magic": "3981"
+        },
+        {
+            "Name": "OWLER RING",
+            "Potential": "181",
+            "Mark": "SHADOW",
+            "Type": "RING",
+            "Health": "4939",
+            "Attack": "5388",
+            "Defense": "3592",
+            "Magic": "4041"
+        },
+        {
+            "Name": "POISON FEATHERS",
+            "Potential": "181",
+            "Mark": "SHADOW",
+            "Type": "TALISMAN",
+            "Health": "3574",
+            "Attack": "4021",
+            "Defense": "4914",
+            "Magic": "5361"
+        },
+        {
+            "Name": "SHADOW TALONS",
+            "Potential": "181",
+            "Mark": "SHADOW",
+            "Type": "BOOTS",
+            "Health": "3592",
+            "Attack": "4939",
+            "Defense": "5388",
+            "Magic": "4041"
+        },
+        {
+            "Name": "SHADOW CLAWS",
+            "Potential": "181",
+            "Mark": "SHADOW",
+            "Type": "GLOVES",
+            "Health": "4914",
+            "Attack": "5361",
+            "Defense": "3574",
+            "Magic": "4021"
+        },
+        {
+            "Name": "SHADOW OWL ARMOR",
+            "Potential": "182",
+            "Mark": "SHADOW",
+            "Type": "ARMOR",
+            "Health": "3610",
+            "Attack": "4061",
+            "Defense": "4963",
+            "Magic": "5415"
+        },
+        {
+            "Name": "OWL KING CROWN",
+            "Potential": "181",
+            "Mark": "SHADOW",
+            "Type": "HELMET",
+            "Health": "3574",
+            "Attack": "4914",
+            "Defense": "5361",
+            "Magic": "4021"
+        },
+        {
+            "Name": "SILVER SALVATION",
+            "Potential": "177",
+            "Mark": "SACRED",
+            "Type": "NECKLACE",
+            "Health": "4817",
+            "Attack": "5255",
+            "Defense": "3503",
+            "Magic": "3941"
+        },
+        {
+            "Name": "HUNDRED BLESSINGS RING",
+            "Potential": "176",
+            "Mark": "SACRED",
+            "Type": "RING",
+            "Health": "3485",
+            "Attack": "3921",
+            "Defense": "4792",
+            "Magic": "5228"
+        },
+        {
+            "Name": "GOLDEN CODEX",
+            "Potential": "178",
+            "Mark": "SACRED",
+            "Type": "TALISMAN",
+            "Health": "3521",
+            "Attack": "4841",
+            "Defense": "5281",
+            "Magic": "3961"
+        },
+        {
+            "Name": "SACRED PATH BOOTS",
+            "Potential": "177",
+            "Mark": "SACRED",
+            "Type": "BOOTS",
+            "Health": "4817",
+            "Attack": "5255",
+            "Defense": "3503",
+            "Magic": "3941"
+        },
+        {
+            "Name": "GLOVES OF GRACE",
+            "Potential": "177",
+            "Mark": "SACRED",
+            "Type": "GLOVES",
+            "Health": "3503",
+            "Attack": "3941",
+            "Defense": "4817",
+            "Magic": "5255"
+        },
+        {
+            "Name": "GOLDEN ARCHANGEL ARMOR",
+            "Potential": "178",
+            "Mark": "SACRED",
+            "Type": "ARMOR",
+            "Health": "3521",
+            "Attack": "4841",
+            "Defense": "5281",
+            "Magic": "3961"
+        },
+        {
+            "Name": "IMMACULATE CROWN",
+            "Potential": "178",
+            "Mark": "SACRED",
+            "Type": "HELMET",
+            "Health": "4841",
+            "Attack": "5281",
+            "Defense": "3521",
+            "Magic": "3961"
+        },
+        {
+            "Name": "TINY ASSASSIN NECKLACE",
+            "Potential": "175",
+            "Mark": "VENOM",
+            "Type": "NECKLACE",
+            "Health": "3468",
+            "Attack": "4768",
+            "Defense": "5201",
+            "Magic": "3901"
+        },
+        {
+            "Name": "ENDLESS COMA RING",
+            "Potential": "178",
+            "Mark": "VENOM",
+            "Type": "RING",
+            "Health": "4841",
+            "Attack": "5281",
+            "Defense": "3521",
+            "Magic": "3961"
+        },
+        {
+            "Name": "VENOMOUS SPINNER",
+            "Potential": "177",
+            "Mark": "VENOM",
+            "Type": "TALISMAN",
+            "Health": "3503",
+            "Attack": "3941",
+            "Defense": "4817",
+            "Magic": "5255"
+        },
+        {
+            "Name": "WALKERS OF AMBUSH",
+            "Potential": "178",
+            "Mark": "VENOM",
+            "Type": "BOOTS",
+            "Health": "3521",
+            "Attack": "4841",
+            "Defense": "5281",
+            "Magic": "3961"
+        },
+        {
+            "Name": "WEB WEAVERS",
+            "Potential": "177",
+            "Mark": "VENOM",
+            "Type": "GLOVES",
+            "Health": "4817",
+            "Attack": "5255",
+            "Defense": "3503",
+            "Magic": "3941"
+        },
+        {
+            "Name": "GREAT PREDATOR CARAPACE",
+            "Potential": "177",
+            "Mark": "VENOM",
+            "Type": "ARMOR",
+            "Health": "3503",
+            "Attack": "3941",
+            "Defense": "4817",
+            "Magic": "5255"
+        },
+        {
+            "Name": "TOXIC GRIN",
+            "Potential": "177",
+            "Mark": "VENOM",
+            "Type": "HELMET",
+            "Health": "3503",
+            "Attack": "4817",
+            "Defense": "5255",
+            "Magic": "3941"
+        },
+        {
+            "Name": "LAVA CROWN",
+            "Potential": "174",
+            "Mark": "LAVA",
+            "Type": "HELMET",
+            "Health": "3432",
+            "Attack": "3861",
+            "Defense": "4719",
+            "Magic": "5148"
+        },
+        {
+            "Name": "LAVALORD ARMOR",
+            "Potential": "175",
+            "Mark": "LAVA",
+            "Type": "ARMOR",
+            "Health": "4768",
+            "Attack": "5201",
+            "Defense": "3468",
+            "Magic": "3901"
+        },
+        {
+            "Name": "VOLCANIC GLOVES",
+            "Potential": "174",
+            "Mark": "LAVA",
+            "Type": "GLOVES",
+            "Health": "3432",
+            "Attack": "4719",
+            "Defense": "5148",
+            "Magic": "3861"
+        },
+        {
+            "Name": "BASALT STOMPERS",
+            "Potential": "174",
+            "Mark": "LAVA",
+            "Type": "BOOTS",
+            "Health": "3450",
+            "Attack": "3881",
+            "Defense": "4743",
+            "Magic": "5175"
+        },
+        {
+            "Name": "BASALT MASK",
+            "Potential": "174",
+            "Mark": "LAVA",
+            "Type": "TALISMAN",
+            "Health": "4719",
+            "Attack": "5148",
+            "Defense": "3432",
+            "Magic": "3861"
+        },
+        {
+            "Name": "LAVALORD RING",
+            "Potential": "174",
+            "Mark": "LAVA",
+            "Type": "RING",
+            "Health": "3450",
+            "Attack": "4743",
+            "Defense": "5175",
+            "Magic": "3881"
+        },
+        {
+            "Name": "INNER FIRE PENDANT",
+            "Potential": "171",
+            "Mark": "LAVA",
+            "Type": "NECKLACE",
+            "Health": "3396",
+            "Attack": "3821",
+            "Defense": "4670",
+            "Magic": "5095"
+        },
+        {
+            "Name": "ICE TEAR PENDANT",
+            "Potential": "170",
+            "Mark": "ICE",
+            "Type": "NECKLACE",
+            "Health": "3361",
+            "Attack": "4621",
+            "Defense": "5041",
+            "Magic": "3781"
+        },
+        {
+            "Name": "GLACIER BEAST RING",
+            "Potential": "169",
+            "Mark": "ICE",
+            "Type": "RING",
+            "Health": "4597",
+            "Attack": "5015",
+            "Defense": "3343",
+            "Magic": "3761"
+        },
+        {
+            "Name": "LIQUID ICE",
+            "Potential": "170",
+            "Mark": "ICE",
+            "Type": "TALISMAN",
+            "Health": "3379",
+            "Attack": "3801",
+            "Defense": "4646",
+            "Magic": "5068"
+        },
+        {
+            "Name": "GLACIER STOMPERS",
+            "Potential": "170",
+            "Mark": "ICE",
+            "Type": "BOOTS",
+            "Health": "3361",
+            "Attack": "4621",
+            "Defense": "5041",
+            "Magic": "3781"
+        },
+        {
+            "Name": "CLAWS OF BLIZZARD",
+            "Potential": "170",
+            "Mark": "ICE",
+            "Type": "GLOVES",
+            "Health": "4621",
+            "Attack": "5041",
+            "Defense": "3361",
+            "Magic": "3781"
+        },
+        {
+            "Name": "CURSED ICEBERG ARMOR",
+            "Potential": "170",
+            "Mark": "ICE",
+            "Type": "ARMOR",
+            "Health": "3379",
+            "Attack": "3801",
+            "Defense": "4646",
+            "Magic": "5068"
+        },
+        {
+            "Name": "ICE CROWN",
+            "Potential": "171",
+            "Mark": "ICE",
+            "Type": "HELMET",
+            "Health": "3396",
+            "Attack": "4670",
+            "Defense": "5095",
+            "Magic": "3821"
+        },
+        {
+            "Name": "HEARTH OF HELL PENDANT",
+            "Potential": "169",
+            "Mark": "DEATH",
+            "Type": "NECKLACE",
+            "Health": "3343",
+            "Attack": "3761",
+            "Defense": "4597",
+            "Magic": "5015"
+        },
+        {
+            "Name": "BAALS FANG RING",
+            "Potential": "170",
+            "Mark": "DEATH",
+            "Type": "RING",
+            "Health": "3361",
+            "Attack": "4621",
+            "Defense": "5041",
+            "Magic": "3781"
+        },
+        {
+            "Name": "DEMON LEGION SCROLL",
+            "Potential": "170",
+            "Mark": "DEATH",
+            "Type": "TALISMAN",
+            "Health": "4621",
+            "Attack": "5041",
+            "Defense": "3361",
+            "Magic": "3781"
+        },
+        {
+            "Name": "DIABOLIC STOMPERS",
+            "Potential": "170",
+            "Mark": "DEATH",
+            "Type": "BOOTS",
+            "Health": "3379",
+            "Attack": "3801",
+            "Defense": "4646",
+            "Magic": "5068"
+        },
+        {
+            "Name": "DEVIL’S GRIP GLOVES",
+            "Potential": "170",
+            "Mark": "DEATH",
+            "Type": "GLOVES",
+            "Health": "3361",
+            "Attack": "4621",
+            "Defense": "5041",
+            "Magic": "3781"
+        },
+        {
+            "Name": "HELLGATE ARMOR",
+            "Potential": "171",
+            "Mark": "DEATH",
+            "Type": "ARMOR",
+            "Health": "4670",
+            "Attack": "5095",
+            "Defense": "3396",
+            "Magic": "3821"
+        },
+        {
+            "Name": "RED DEVIL",
+            "Potential": "170",
+            "Mark": "DEATH",
+            "Type": "HELMET",
+            "Health": "3361",
+            "Attack": "3781",
+            "Defense": "4621",
+            "Magic": "5041"
+        },
+        {
+            "Name": "PROPHECY GLOVES",
+            "Potential": "168",
+            "Mark": "MYTH",
+            "Type": "GLOVES",
+            "Health": "3325",
+            "Attack": "3741",
+            "Defense": "4572",
+            "Magic": "4988"
+        },
+        {
+            "Name": "ARCANE POTION PENDANT",
+            "Potential": "169",
+            "Mark": "MYTH",
+            "Type": "NECKLACE",
+            "Health": "4597",
+            "Attack": "5015",
+            "Defense": "3343",
+            "Magic": "3761"
+        },
+        {
+            "Name": "FATAL BITE RING",
+            "Potential": "168",
+            "Mark": "MYTH",
+            "Type": "RING",
+            "Health": "3325",
+            "Attack": "3741",
+            "Defense": "4572",
+            "Magic": "4988"
+        },
+        {
+            "Name": "DRAGONFIRE POTION",
+            "Potential": "169",
+            "Mark": "MYTH",
+            "Type": "TALISMAN",
+            "Health": "3343",
+            "Attack": "4597",
+            "Defense": "5015",
+            "Magic": "3761"
+        },
+        {
+            "Name": "BOOTS OF DESTINY",
+            "Potential": "169",
+            "Mark": "MYTH",
+            "Type": "BOOTS",
+            "Health": "4597",
+            "Attack": "5015",
+            "Defense": "3343",
+            "Magic": "3761"
+        },
+        {
+            "Name": "THE ALCHEMIST ARMOR",
+            "Potential": "170",
+            "Mark": "MYTH",
+            "Type": "ARMOR",
+            "Health": "3361",
+            "Attack": "4621",
+            "Defense": "5041",
+            "Magic": "3781"
+        },
+        {
+            "Name": "TURBAN OF DIVINATION",
+            "Potential": "169",
+            "Mark": "MYTH",
+            "Type": "HELMET",
+            "Health": "4597",
+            "Attack": "5015",
+            "Defense": "3343",
+            "Magic": "3761"
+        },
+        {
+            "Name": "SAVAGE SHAMAN PENDANT",
+            "Potential": "168",
+            "Mark": "BEAST",
+            "Type": "NECKLACE",
+            "Health": "3325",
+            "Attack": "4572",
+            "Defense": "4988",
+            "Magic": "3741"
+        },
+        {
+            "Name": "SLAYER’S RING",
+            "Potential": "169",
+            "Mark": "BEAST",
+            "Type": "RING",
+            "Health": "4597",
+            "Attack": "5015",
+            "Defense": "3343",
+            "Magic": "3761"
+        },
+        {
+            "Name": "SKULL BONGO",
+            "Potential": "169",
+            "Mark": "BEAST",
+            "Type": "TALISMAN",
+            "Health": "3343",
+            "Attack": "3761",
+            "Defense": "4597",
+            "Magic": "5015"
+        },
+        {
+            "Name": "CORPSE DWELLER BOOTS",
+            "Potential": "170",
+            "Mark": "BEAST",
+            "Type": "BOOTS",
+            "Health": "3361",
+            "Attack": "4621",
+            "Defense": "5041",
+            "Magic": "3781"
+        },
+        {
+            "Name": "GLOVES OF BRUTALITY",
+            "Potential": "169",
+            "Mark": "BEAST",
+            "Type": "GLOVES",
+            "Health": "4597",
+            "Attack": "5015",
+            "Defense": "3343",
+            "Magic": "3761"
+        },
+        {
+            "Name": "TORTURE TYRANT ARMOR",
+            "Potential": "170",
+            "Mark": "BEAST",
+            "Type": "ARMOR",
+            "Health": "3361",
+            "Attack": "3781",
+            "Defense": "4621",
+            "Magic": "5041"
+        },
+        {
+            "Name": "HUNTER HORNS",
+            "Potential": "169",
+            "Mark": "BEAST",
+            "Type": "HELMET",
+            "Health": "3343",
+            "Attack": "4597",
+            "Defense": "5015",
+            "Magic": "3761"
+        },
+        {
+            "Name": "THE HULK",
+            "Potential": "175",
+            "Mark": "NATURE",
+            "Type": "MAIN HAND",
+            "Health": "3468",
+            "Attack": "4768",
+            "Defense": "5201",
+            "Magic": "3901"
+        },
+        {
+            "Name": "RATCHET HATCHET",
+            "Potential": "188",
+            "Mark": "BEAST",
+            "Type": "MAIN HAND",
+            "Health": "4876",
+            "Attack": "5771",
+            "Defense": "3564",
+            "Magic": "4482"
+        },
+        {
+            "Name": "DEPTH OF DESPAIR",
+            "Potential": "184",
+            "Mark": "ABYSS",
+            "Type": "OFF HAND",
+            "Health": "3645",
+            "Attack": "5012",
+            "Defense": "5468",
+            "Magic": "4101"
+        },
+        {
+            "Name": "THUNDERBASH",
+            "Potential": "184",
+            "Mark": "THUNDER",
+            "Type": "OFF HAND",
+            "Health": "3645",
+            "Attack": "5012",
+            "Defense": "5468",
+            "Magic": "4101"
+        },
+        {
+            "Name": "AZAZEL SHIELD",
+            "Potential": "169",
+            "Mark": "DEATH",
+            "Type": "OFF HAND",
+            "Health": "4597",
+            "Attack": "5015",
+            "Defense": "3343",
+            "Magic": "3761"
+        },
+        {
+            "Name": "NIGHTMARE THRONE SHIELD",
+            "Potential": "168",
+            "Mark": "NECRO",
+            "Type": "OFF HAND",
+            "Health": "3325",
+            "Attack": "4572",
+            "Defense": "4988",
+            "Magic": "3741"
+        },
+        {
+            "Name": "BONE DRILLER",
+            "Potential": "164",
+            "Mark": "NECRO",
+            "Type": "OFF HAND",
+            "Health": "4426",
+            "Attack": "4828",
+            "Defense": "3219",
+            "Magic": "3621"
+        },
+        {
+            "Name": "WINGED DEFENDER SHIELD",
+            "Potential": "205",
+            "Mark": "SACRED",
+            "Type": "OFF HAND",
+            "Health": "5578",
+            "Attack": "6300",
+            "Defense": "4116",
+            "Magic": "4500"
+        },
+        {
+            "Name": "MALACHITE TRUNCHEON",
+            "Potential": "191",
+            "Mark": "NECRO",
+            "Type": "MAIN HAND",
+            "Health": "3789",
+            "Attack": "4300",
+            "Defense": "5158",
+            "Magic": "5794"
+        },
+        {
+            "Name": "GREEN CRYSTAL SHIELD",
+            "Potential": "191",
+            "Mark": "NECRO",
+            "Type": "OFF HAND",
+            "Health": "5274",
+            "Attack": "5700",
+            "Defense": "3800",
+            "Magic": "4296"
+        },
+        {
+            "Name": "HECATOMBUS",
+            "Potential": "189",
+            "Mark": "DEATH",
+            "Type": "MAIN HAND",
+            "Health": "4985",
+            "Attack": "5683",
+            "Defense": "3670",
+            "Magic": "4496"
+        },
+        {
+            "Name": "DRAGON’S VITALITY",
+            "Potential": "197",
+            "Mark": "DRAGON",
+            "Type": "NECKLACE",
+            "Health": "6300",
+            "Attack": "4675",
+            "Defense": "3600",
+            "Magic": "3780"
+        },
+        {
+            "Name": "DRAGOVITUS",
+            "Potential": "198",
+            "Mark": "DRAGON",
+            "Type": "TALISMAN",
+            "Health": "6405",
+            "Attack": "3640",
+            "Defense": "4675",
+            "Magic": "3822"
+        },
+        {
+            "Name": "THE STRIX",
+            "Potential": "181",
+            "Mark": "SHADOW",
+            "Type": "MAIN HAND",
+            "Health": "3592",
+            "Attack": "4939",
+            "Defense": "5388",
+            "Magic": "4041"
+        },
+        {
+            "Name": "ARACHNEA’S HEART",
+            "Potential": "179",
+            "Mark": "VENOM",
+            "Type": "OFF HAND",
+            "Health": "4890",
+            "Attack": "5335",
+            "Defense": "3556",
+            "Magic": "4001"
+        },
+        {
+            "Name": "VICIOUS VENOM SPEAR",
+            "Potential": "178",
+            "Mark": "VENOM",
+            "Type": "MAIN HAND",
+            "Health": "3521",
+            "Attack": "4841",
+            "Defense": "5281",
+            "Magic": "3961"
+        },
+        {
+            "Name": "STONE MAZE GUARDIAN",
+            "Potential": "175",
+            "Mark": "NATURE",
+            "Type": "OFF HAND",
+            "Health": "3468",
+            "Attack": "4768",
+            "Defense": "5201",
+            "Magic": "3901"
+        },
+        {
+            "Name": "DEMON’S DAME",
+            "Potential": "202",
+            "Mark": "SHADOW",
+            "Type": "MAIN HAND",
+            "Health": "4084",
+            "Attack": "4500",
+            "Defense": "5522",
+            "Magic": "6100"
+        },
+        {
+            "Name": "THE CHOSEN ONE",
+            "Potential": "188",
+            "Mark": "MYTH",
+            "Type": "MAIN HAND",
+            "Health": "5148",
+            "Attack": "5742",
+            "Defense": "3564",
+            "Magic": "4158"
+        },
+        {
+            "Name": "JAWS OF TERROR",
+            "Potential": "188",
+            "Mark": "BEAST",
+            "Type": "OFF HAND",
+            "Health": "3663",
+            "Attack": "5049",
+            "Defense": "5742",
+            "Magic": "4158"
+        },
+        {
+            "Name": "THE SANGUINER",
+            "Potential": "186",
+            "Mark": "HEX",
+            "Type": "MAIN HAND",
+            "Health": "3663",
+            "Attack": "4121",
+            "Defense": "5037",
+            "Magic": "5495"
+        },
+        {
+            "Name": "THE PAX",
+            "Potential": "186",
+            "Mark": "NOBLE",
+            "Type": "MAIN HAND",
+            "Health": "3663",
+            "Attack": "5037",
+            "Defense": "5495",
+            "Magic": "4121"
+        },
+        {
+            "Name": "DRACARION",
+            "Potential": "181",
+            "Mark": "DRAGON",
+            "Type": "MAIN HAND",
+            "Health": "3592",
+            "Attack": "4041",
+            "Defense": "4939",
+            "Magic": "5388"
+        },
+        {
+            "Name": "THE SHADOW OWL",
+            "Potential": "181",
+            "Mark": "SHADOW",
+            "Type": "OFF HAND",
+            "Health": "4939",
+            "Attack": "5388",
+            "Defense": "3592",
+            "Magic": "4041"
+        },
+        {
+            "Name": "FORBIDDEN RITUAL SHIELD",
+            "Potential": "167",
+            "Mark": "MYTH",
+            "Type": "OFF HAND",
+            "Health": "3308",
+            "Attack": "3721",
+            "Defense": "4548",
+            "Magic": "4961"
+        },
+        {
+            "Name": "FANG OF NAGA",
+            "Potential": "168",
+            "Mark": "MYTH",
+            "Type": "MAIN HAND",
+            "Health": "3325",
+            "Attack": "3741",
+            "Defense": "4572",
+            "Magic": "4988"
+        },
+        {
+            "Name": "TRIUMPHANT DEFENDER",
+            "Potential": "204",
+            "Mark": "SACRED",
+            "Type": "OFF HAND",
+            "Health": "4200",
+            "Attack": "5400",
+            "Defense": "6237",
+            "Magic": "4500"
+        },
+        {
+            "Name": "SCYTHE OF WETLANDS",
+            "Potential": "192",
+            "Mark": "NATURE",
+            "Type": "MAIN HAND",
+            "Health": "4300",
+            "Attack": "5364",
+            "Defense": "5900",
+            "Magic": "3700"
+        },
+        {
+            "Name": "BUCK OF BANE",
+            "Potential": "191",
+            "Mark": "NECRO",
+            "Type": "OFF HAND",
+            "Health": "3881",
+            "Attack": "5169",
+            "Defense": "5672",
+            "Magic": "4274"
+        },
+        {
+            "Name": "GOLDEN GLASS BLADE",
+            "Potential": "186",
+            "Mark": "LAVA",
+            "Type": "MAIN HAND",
+            "Health": "4975",
+            "Attack": "5583",
+            "Defense": "3663",
+            "Magic": "4295"
+        },
+        {
+            "Name": "FIERY FURY WARD",
+            "Potential": "189",
+            "Mark": "LAVA",
+            "Type": "OFF HAND",
+            "Health": "3693",
+            "Attack": "4444",
+            "Defense": "5015",
+            "Magic": "5783"
+        },
+        {
+            "Name": "THE PHOENAXE",
+            "Potential": "189",
+            "Mark": "LAVA",
+            "Type": "MAIN HAND",
+            "Health": "4283",
+            "Attack": "5200",
+            "Defense": "5817",
+            "Magic": "3596"
+        },
+        {
+            "Name": "SWAN SONG",
+            "Potential": "185",
+            "Mark": "VENOM",
+            "Type": "OFF HAND",
+            "Health": "5049",
+            "Attack": "5475",
+            "Defense": "3663",
+            "Magic": "4201"
+        },
+        {
+            "Name": "SCARLET SCORPIO SHIELD",
+            "Potential": "186",
+            "Mark": "VENOM",
+            "Type": "OFF HAND",
+            "Health": "3682",
+            "Attack": "5049",
+            "Defense": "5550",
+            "Magic": "4158"
+        },
+        {
+            "Name": "IRON MAVERICK",
+            "Potential": "188",
+            "Mark": "VENOM",
+            "Type": "MAIN HAND",
+            "Health": "3689",
+            "Attack": "4352",
+            "Defense": "5100",
+            "Magic": "5700"
+        },
+        {
+            "Name": "DEATH RATTLE SHIELD",
+            "Potential": "187",
+            "Mark": "DEATH",
+            "Type": "OFF HAND",
+            "Health": "5158",
+            "Attack": "5555",
+            "Defense": "3670",
+            "Magic": "4166"
+        },
+        {
+            "Name": "BATTLE BEETLE",
+            "Potential": "184",
+            "Mark": "MYTH",
+            "Type": "OFF HAND",
+            "Health": "5049",
+            "Attack": "5445",
+            "Defense": "3663",
+            "Magic": "4059"
+        },
+        {
+            "Name": "THE SABERTOOTH",
+            "Potential": "186",
+            "Mark": "ICE",
+            "Type": "MAIN HAND",
+            "Health": "3682",
+            "Attack": "4242",
+            "Defense": "5100",
+            "Magic": "5600"
+        },
+        {
+            "Name": "SPECTACULAR SHARD SHIELD",
+            "Potential": "186",
+            "Mark": "WIND",
+            "Type": "OFF HAND",
+            "Health": "3682",
+            "Attack": "4343",
+            "Defense": "5015",
+            "Magic": "5594"
+        },
+        {
+            "Name": "SCARLET BLADE",
+            "Potential": "186",
+            "Mark": "HEX",
+            "Type": "MAIN HAND",
+            "Health": "5037",
+            "Attack": "5495",
+            "Defense": "3663",
+            "Magic": "4121"
+        },
+        {
+            "Name": "IRON BAT",
+            "Potential": "186",
+            "Mark": "HEX",
+            "Type": "OFF HAND",
+            "Health": "3663",
+            "Attack": "5037",
+            "Defense": "5495",
+            "Magic": "4121"
+        },
+        {
+            "Name": "MANTICORE AXE",
+            "Potential": "184",
+            "Mark": "NOBLE",
+            "Type": "MAIN HAND",
+            "Health": "5012",
+            "Attack": "5468",
+            "Defense": "3645",
+            "Magic": "4101"
+        },
+        {
+            "Name": "SHIELD OF MANTICORE",
+            "Potential": "186",
+            "Mark": "NOBLE",
+            "Type": "OFF HAND",
+            "Health": "3663",
+            "Attack": "4121",
+            "Defense": "5037",
+            "Magic": "5495"
+        },
+        {
+            "Name": "RUNEWRATH SHIELD",
+            "Potential": "186",
+            "Mark": "NOBLE",
+            "Type": "OFF HAND",
+            "Health": "3663",
+            "Attack": "4121",
+            "Defense": "5037",
+            "Magic": "5495"
+        },
+        {
+            "Name": "LEVIATHAN",
+            "Potential": "184",
+            "Mark": "ABYSS",
+            "Type": "MAIN HAND",
+            "Health": "3645",
+            "Attack": "5012",
+            "Defense": "5468",
+            "Magic": "4101"
+        },
+        {
+            "Name": "GOLDEN HUNTER",
+            "Potential": "184",
+            "Mark": "THUNDER",
+            "Type": "MAIN HAND",
+            "Health": "3645",
+            "Attack": "5012",
+            "Defense": "5468",
+            "Magic": "4101"
+        },
+        {
+            "Name": "BLUE BUTCHER",
+            "Potential": "184",
+            "Mark": "THUNDER",
+            "Type": "OFF HAND",
+            "Health": "5012",
+            "Attack": "5468",
+            "Defense": "3645",
+            "Magic": "4101"
+        },
+        {
+            "Name": "THUNDERBLADE",
+            "Potential": "184",
+            "Mark": "THUNDER",
+            "Type": "MAIN HAND",
+            "Health": "5012",
+            "Attack": "5468",
+            "Defense": "3645",
+            "Magic": "4101"
+        },
+        {
+            "Name": "THE SCALEWARD",
+            "Potential": "182",
+            "Mark": "DRAGON",
+            "Type": "OFF HAND",
+            "Health": "3610",
+            "Attack": "4963",
+            "Defense": "5415",
+            "Magic": "4061"
+        },
+        {
+            "Name": "WYVERN WING GREATSHIELD",
+            "Potential": "202",
+            "Mark": "DRAGON",
+            "Type": "OFF HAND",
+            "Health": "5473",
+            "Attack": "6100",
+            "Defense": "4300",
+            "Magic": "4296"
+        }
+    ]
+}

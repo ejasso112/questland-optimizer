@@ -1,0 +1,258 @@
+/*******************************
+  Font Defaults
+*******************************/
+@font-face {
+	font-family: 'CenturyGothic';
+	src: url('../fonts/CenturyGothic/CenturyGothic.eot');
+	src: url('../fonts/CenturyGothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic') format('svg'),
+		url('../fonts/CenturyGothic/CenturyGothic.ttf') format('truetype'),
+		url('../fonts/CenturyGothic/CenturyGothic.woff') format('woff'),
+		url('../fonts/CenturyGothic/CenturyGothic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*******************************
+  Global Defaults
+*******************************/
+* {
+	font-family: 'CenturyGothic';
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+
+h4 {
+    margin: 0px;
+}
+
+th {
+    text-align: left;
+}
+
+section {
+    background-color: #302d28;
+}
+
+.container {
+    background-color: #1f1d18;
+    text-transform: uppercase;
+    max-width: 800px;
+    padding: 0 3px;
+}
+
+/*-----------------------------------------
+-----------Guild Bonus Section-------------
+-----------------------------------------*/
+#guild-bonus-container th label,
+#guild-bonus-container td{
+    color: white;
+    font-weight: normal;
+}
+
+#guild-bonus-container h3 {
+    display: inline-block;
+    background-color: #442915;
+    border-bottom: 1px solid #7e5233;
+    font-weight: normal;
+    color: white;
+    padding: 6px;
+}
+
+#guild-bonus-table {
+    background-color: #653c1f;
+    padding: 6px;
+    width: 100%;
+}
+
+#guild-bonus-table tbody{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#guild-bonus-table tr td input{
+    width: 40px;
+    padding: 6px;
+}
+
+#guild-bonus-table tr th{
+    width: 75px;
+}
+
+/*-----------------------------------------
+------Collections Percentages Section------
+-----------------------------------------*/
+#collections-percentages-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#collections-percentages-container td{
+    color: white;
+    font-weight: normal;
+}
+
+#collections-percentages-container h3 {
+    display: inline-block;
+    font-weight: normal;
+    color: #ffffff;
+    padding: 6px;
+}
+
+#collection-1-percentages h3 {
+    background-color: #833021;
+    border-top: 3px solid #1f1d18;
+    border-bottom: 1px solid #f3664e;
+}
+
+#collection-2-percentages h3 {
+    background-color: #346b74;
+    border-top: 3px solid #1f1d18;
+    border-bottom: 1px solid #72c6d3;
+
+}
+
+.collection-percentages-table {
+    padding: 6px;
+}
+
+#collection-percentages-table-1{
+    background-color: #c33d24;
+}
+
+#collection-percentages-table-2{
+    background-color: #479ba8;
+}
+
+.collection-percentages-table td {
+    border-left: 6px solid transparent;
+    border-top: 6px solid transparent;
+}
+
+.collection-percentages-table td:first-child {
+    border-left: 0;
+}
+
+.collection-percentages-table tr:first-child td {
+    border-top: 0;
+}
+
+.collection-percentages-table tr td input{
+    width: 64px;
+    padding: 6px;
+}
+
+/*-----------------------------------------
+---------Equipped Gear Collection----------
+-----------------------------------------*/
+#equipped-gear-container label,
+#equipped-gear-container output{
+    color: white;
+    font-weight: normal;
+}
+
+#equipped-gear-container h3 {
+    display: inline-block;
+    background-color: #442915;
+    border-top: 3px solid #1f1d18;
+    border-bottom: 1px solid #7e5233;
+    font-weight: normal;
+    color: white;
+    padding: 6px;
+}
+
+#equipped-gear-table {
+    background-color: #653c1f;
+    padding: 6px;
+    width: 100%;
+}
+
+.equipped-gear-table td {
+    border-left: 6px solid transparent;
+    border-top: 6px solid transparent;
+}
+
+.equipped-gear-table label{
+    padding: 6px;
+}
+
+.equipped-gear-table th:first-child label{
+    padding-left: 0;
+}
+
+.equipped-gear-table td:first-child {
+    border-left: 0;
+}
+
+.equipped-gear-table tr:first-child td {
+    border-top: 0;
+}
+
+.equipped-gear-table tr td select{
+    padding: 6px;
+    width: 340px;
+}
+
+.equipped-gear-table tr td input{
+    padding: 6px;
+    width: 100px;
+}
+/*-----------------------------------------
+--------Collections Gear Collection--------
+-----------------------------------------*/
+#collections-gear-container label,
+#collections-gear-container output{
+    color: white;
+    font-weight: normal;
+}
+
+#collections-gear-container h3 {
+    display: inline-block;
+    background-color: #442915;
+    border-top: 3px solid #1f1d18;
+    border-bottom: 1px solid #7e5233;
+    font-weight: normal;
+    color: white;
+    padding: 6px;
+}
+
+#collections-gear-table {
+    background-color: #653c1f;
+    padding: 6px;
+    width: 100%;
+}
+
+.collections-gear-table td {
+    border-left: 6px solid transparent;
+    border-top: 6px solid transparent;
+}
+
+.collections-gear-table label{
+    padding: 6px;
+}
+
+.collections-gear-table th:first-child label{
+    padding-left: 0;
+}
+
+.collections-gear-table td:first-child {
+    border-left: 0;
+}
+
+.collections-gear-table tr:first-child td {
+    border-top: 0;
+}
+
+.collections-gear-table tr td select{
+    padding: 6px;
+    width: 340px;
+}
+
+.collections-gear-table tr td input{
+    padding: 6px;
+    width: 100px;
+}
+
