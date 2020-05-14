@@ -3667,6 +3667,48 @@
             "Link_2": "THUNDERBOLT STOMPERS",
             "Link_3": "AMULET OF DRACONIC VIGILANCE",
             "Boost": "MAGIC"
+        },
+        {
+            "Name": "WARFISTS OF THUNDER",
+            "Potential": "214",
+            "Mark": "THUNDER",
+            "Type": "GLOVES",
+            "Health": "5677",
+            "Attack": "6680",
+            "Defense": "4325",
+            "Magic": "4531",
+            "Link_1": "BOLT OF LIGHTNING RING",
+            "Link_2": "HELM OF THE STORM",
+            "Link_3": "CINDERLORD'S CARAPACE",
+            "Boost": "ATTACK"
+        },
+        {
+            "Name": "HEART OF THE STORM",
+            "Potential": "216",
+            "Mark": "THUNDER",
+            "Type": "NECKLACE",
+            "Health": "4352",
+            "Attack": "5864",
+            "Defense": "6488",
+            "Magic": "4786",
+            "Link_1": "HELM OF THE STORM",
+            "Link_2": "SPHERE OF THE TEMPEST",
+            "Link_3": "FIRE-FORGED CLAWS",
+            "Boost": "DEFENSE"
+        },
+        {
+            "Name": "PERIAPT OF ZEPHYR",
+            "Potential": "174",
+            "Mark": "WIND",
+            "Type": "TALISMAN",
+            "Health": "4719",
+            "Attack": "5148",
+            "Defense": "3432",
+            "Magic": "3861",
+            "Link_1": "LAVALORD ARMOR",
+            "Link_2": "SILVER SALVATION",
+            "Link_3": "GLACIER BEAST RING",
+            "Boost": "ATTACK"
         }
     ]
 }
