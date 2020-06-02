@@ -1,3 +1,57 @@
+instructions = document.getElementById("directions-section")
+optimize = document.getElementById("optimize-section")
+about = document.getElementById("about-section")
+
+function ActiveTabInstructions() {
+    instructions.style["display"] = "block"
+    document.getElementsByTagName("a")[0].setAttribute("id", "active")
+    optimize.style["display"] = "none"
+    document.getElementsByTagName("a")[1].removeAttribute("id")
+    about.style["display"] = "none"
+    document.getElementsByTagName("a")[2].removeAttribute("id")
+
+    localStorage.setItem("active-tab", "instructions")
+}
+
+function ActiveTabOptimize() {
+    instructions.style["display"] = "none"
+    document.getElementsByTagName("a")[0].removeAttribute("id")
+    optimize.style["display"] = "block"
+    document.getElementsByTagName("a")[1].setAttribute("id", "active")
+    about.style["display"] = "none"
+    document.getElementsByTagName("a")[2].removeAttribute("id")
+    
+    localStorage.setItem("active-tab", "optimize")
+}
+
+function ActiveTabAbout() {
+    instructions.style["display"] = "none"
+    document.getElementsByTagName("a")[0].removeAttribute("id")
+    optimize.style["display"] = "none"
+    document.getElementsByTagName("a")[1].removeAttribute("id")
+    about.style["display"] = "block"
+    document.getElementsByTagName("a")[2].setAttribute("id", "active")
+    
+    localStorage.setItem("active-tab", "about")
+}
+
+function OnLoadTab() {
+    currTab = localStorage.getItem("active-tab")
+
+    if (currTab == "optimize") {
+        ActiveTabOptimize()
+    }
+    else if (currTab == "about") {
+        ActiveTabAbout()
+    }
+    else{
+        ActiveTabInstructions()
+    }
+
+    document.getElementsByTagName("body")[0].style["visibility"] = "visible"
+}
+window.onload = OnLoadTab()
+
 /* Function thats sorts Gear json file in alpabetical order */
 function sortByProperty(property){
     return function(a,b){
