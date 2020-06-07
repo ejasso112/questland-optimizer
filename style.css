@@ -2,48 +2,75 @@
   Font Defaults
 *******************************/
 @font-face {
-	font-family: 'CenturyGothic';
-	src: url('../fonts/CenturyGothic/CenturyGothic.eot');
-	src: url('../fonts/CenturyGothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic') format('svg'),
-		url('../fonts/CenturyGothic/CenturyGothic.ttf') format('truetype'),
-		url('../fonts/CenturyGothic/CenturyGothic.woff') format('woff'),
-		url('../fonts/CenturyGothic/CenturyGothic.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'CenturyGothic';
+    src: url('../fonts/CenturyGothic/CenturyGothic.eot');
+    src: url('../fonts/CenturyGothic/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic') format('svg'),
+        url('../fonts/CenturyGothic/CenturyGothic.ttf') format('truetype'),
+        url('../fonts/CenturyGothic/CenturyGothic.woff') format('woff'),
+        url('../fonts/CenturyGothic/CenturyGothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*******************************
 Global Defaults
 *******************************/
 * {
-	font-family: 'CenturyGothic';
-	margin: 0;
-	padding: 0;
-	color: black;
+    margin: 0;
+    color: white;
+    font-family: 'CenturyGothic';
 }
 
-section {
-    background-color: #302d28;
+body {
+    visibility: hidden;
+    background-color: #1D1D1D;
+}
+
+.section {
+    padding: 24px 8px;
+}
+
+.main-section {
+    border-bottom: 3px solid #CDC79A;
+    background-color: #1F1A14;
 }
 
 .container {
     margin: 0 auto;
-    background-color: #1f1d18;
-    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 800px;
-    padding: 0 3px;
 }
 
-h3 {
-    display: inline-block;
+.main-container {
+    padding-bottom: 48px;
+}
+
+h1 {
+    padding: 48px 0 12px 0;
+    font-size: 1.33em;
     font-weight: normal;
-    color: white;
-    padding: 6px;
+}
+
+h2 {
+    padding: 24px 0 8px 0;
+    font-size: 1.16em;
+    font-weight: normal;
+}
+
+p {
+    padding: 48px 0 12px 0;
+}
+
+li {
+    padding: 10px 0 8px 0;
+    font-size: 1em;
 }
 
 table {
-    padding: 6px;
     width: 100%;
 }
 
@@ -51,70 +78,212 @@ th {
     text-align: left;
 }
 
-td, output, label{
-    color: white;
+td,
+output,
+label {
+    text-transform: uppercase;
     font-weight: normal;
 }
 
-select, input{
+option,
+select,
+input {
     padding: 6px;
+    color: #000000;
 }
 
+.gear-piece-c {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.awake-lv-c,
+.boost-lv-c {
+    width: 21%;
+}
+
+.output-c {
+    width: 8%;
+}
 
 /*******************************
-Guild Bonus Section
+Heading Section
 *******************************/
+#header-section svg {
+    fill: #ffffff;
+    width: 100%;
+    max-width: 482px;
+}
+
+/*******************************
+Nav Section
+*******************************/
+#nav-section {
+    padding: 0;
+    height: 60px;
+    border-top: 3px solid #655F47;
+    border-bottom: 3px solid #CDC79A;
+    background-color: #4D4539;
+}
+
+#nav-container {
+    position: relative;
+    top: -12px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#nav-container a {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 60px;
+    border-top: 3px 1.5px solid #655F47;
+    border-left: 1.5px solid #655F47;
+    border-right: 1.5px solid #655F47;
+    border-bottom: 3px solid #CDC79A;
+    background-color: #4D4539;
+    cursor: pointer;
+}
+
+#nav-container a:first-child {
+    border-left: 3px solid #655F47;
+}
+
+#nav-container a:last-child {
+    border-right: 3px solid #655F47;
+}
+
+#nav-container #active {
+    width: 136px;
+    height: 72px;
+    border: 3px solid #CDC79A;
+    border-right: 3px solid #CDC79A;
+    border-bottom: none;
+    background-color: #1F1A14;
+    font-size: 1.1em;
+}
+
+/*******************************
+Directions Section
+*******************************/
+#directions-container {
+    align-items: flex-start;
+}
+
+#directions-container span {
+    color: #FDF553;
+    text-shadow: 0 0 4px #ff0000, 0 0 10px #ff0000, 0 0 12px #ff0000;
+}
+
+#directions-container div {
+    margin: 0 24px;
+}
+
+#awake-lv-container ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#boost-lv-container ul {
+    padding: 0;
+}
+
+#awake-lv-container li,
+#boost-lv-container li {
+    list-style: none;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/*******************************
+Optimize Section
+*******************************/
+#optimize-container {
+    padding: 48px 0;
+}
+
+#optimize-container h3 {
+    padding: 6px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/****Guild Bouns Container*****/
+#guild-bonus-container {
+    width: 100%;
+}
+
 #guild-bonus-container h3 {
     background-color: #442915;
     border-bottom: 1px solid #7e5233;
 }
 
 #guild-bonus-table {
+    padding: 6px;
     background-color: #653c1f;
 }
 
-#guild-bonus-table tbody{
+#guild-bonus-table tbody {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-#guild-bonus-table input{
+#guild-bonus-table input {
     width: 40px;
 }
 
-#guild-bonus-table th{
+#guild-bonus-table th {
     width: 70px;
 }
 
-/*******************************
-Collections Percentages Section
-*******************************/
-#collections-percentages-container {
+/*Collection Percentages Container */
+#collection-percentages-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-#collection-1-percentages h3 {
+#collection-percentages-container div {
+    width: 50%;
+}
+
+#collection-1-percentages-container h3 {
     background-color: #833021;
-    border-top: 3px solid #1f1d18;
+    border-top: 3px solid #7e5233;
     border-bottom: 1px solid #f3664e;
 }
-#collection-2-percentages h3 {
+
+#collection-2-percentages-container h3 {
     background-color: #346b74;
-    border-top: 3px solid #1f1d18;
+    border-top: 3px solid #7e5233;
     border-bottom: 1px solid #72c6d3;
 }
-#collection-percentages-table-1{
+
+#collection-percentages-table-1 {
     background-color: #c33d24;
-}
-#collection-percentages-table-2{
-    background-color: #479ba8;
+    border-bottom: 3px solid #833021;
 }
 
-.collection-percentages-table input{
-    width: 64px;
+#collection-percentages-table-2 {
+    background-color: #479ba8;
+    border-bottom: 3px solid #346b74;
+}
+
+.collection-percentages-table {
+    padding: 6px 0;
+    text-align: center;
+}
+
+.collection-percentages-table input {
+    width: 60%;
 }
 
 .collection-percentages-table td {
@@ -130,29 +299,23 @@ Collections Percentages Section
     border-top: 0;
 }
 
-/*******************************
-Equipped Gear Section
-*******************************/
+/***Equipped Gear Container****/
+#equipped-gear-container {
+    width: 100%;
+}
+
 #equipped-gear-container h3 {
     background-color: #442915;
-    border-top: 3px solid #1f1d18;
     border-bottom: 1px solid #7e5233;
 }
 
 #equipped-gear-table {
+    padding: 6px;
     background-color: #653c1f;
 }
 
-.equipped-gear-table select{
-    width: 340px;
-}
-
-.equipped-gear-table input{
-    width: 100px;
-}
-
 .equipped-gear-table td,
-.equipped-gear-table th{
+.equipped-gear-table th {
     border-left: 6px solid transparent;
     border-top: 6px solid transparent;
 }
@@ -167,29 +330,32 @@ Equipped Gear Section
     border-top: 0;
 }
 
-/*******************************
-Collections Gear Section
-*******************************/
+.equipped-gear-table select {
+    width: 100%;
+}
+
+.collections-gear-table input {
+    width: 80%;
+}
+
+/**Collections Gear Container**/
+#collections-gear-container {
+    width: 100%;
+}
+
 #collections-gear-container h3 {
     background-color: #442915;
-    border-top: 3px solid #1f1d18;
+    border-top: 3px solid #7e5233;
     border-bottom: 1px solid #7e5233;
 }
 
 #collections-gear-table {
+    padding: 6px;
     background-color: #653c1f;
 }
 
-.collections-gear-table tr td select{
-    width: 340px;
-}
-
-.collections-gear-table tr td input{
-    width: 100px;
-}
-
 .collections-gear-table td,
-.collections-gear-table th{
+.collections-gear-table th {
     border-left: 6px solid transparent;
     border-top: 6px solid transparent;
 }
@@ -204,54 +370,68 @@ Collections Gear Section
     border-top: 0;
 }
 
-/*******************************
-Button Section
-*******************************/
-#button-container div{
-    display: flex;
-    justify-content: center;
-    background-color: #352011;
-    border-top: 3px solid #7e5233;
+.collections-gear-table select {
+    width: 100%;
 }
 
-#button-container button{
+.collections-gear-table input {
+    width: 80%;
+}
+
+/*******Button Container*******/
+#button-container {
+    width: 100%;
+    background-color: #352011;
+    border-top: 3px solid #7e5233;
+    text-align: center;
+}
+
+#button-container button {
     width: 25%;
     height: 40px;
     margin: 12px;
+    color: #000000;
 }
 
-/*******************************
-Optimized Collections Section
-*******************************/
+/*Optimized Collections Container*/
+#collection-1-optimized,
+#collection-2-optimized {
+    width: 100%;
+}
+
 #collection-1-optimized h3 {
     background-color: #833021;
-    border-top: 3px solid #1f1d18;
+    border-top: 3px solid #7e5233;
     border-bottom: 1px solid #f3664e;
 }
+
 #collection-2-optimized h3 {
     background-color: #346b74;
-    border-top: 3px solid #1f1d18;
+    border-top: 3px solid #833021;
     border-bottom: 1px solid #72c6d3;
 }
 
-.collection-optimized-table{
+.collection-optimized-table {
+    padding: 6px;
     table-layout: fixed;
 }
-#collection-optimized-table-1{
+
+#collection-optimized-table-1 {
     background-color: #c33d24;
 }
-#collection-optimized-table-2{
+
+#collection-optimized-table-2 {
     background-color: #479ba8;
 }
 
-#collection-optimized-table-1 label{
+#collection-optimized-table-1 label {
     display: block;
     padding: 6px;
     height: 48px;
     background-color: #C95039;
 }
 
-#collection-optimized-table-2 label{
+#collection-optimized-table-2 label {
     display: block;
     padding: 6px;
     height: 48px;
@@ -269,4 +449,62 @@ Optimized Collections Section
 
 .collection-optimized-table tr:first-child td {
     border-top: 0;
+}
+
+/*******************************
+About Section
+*******************************/
+#about-container {
+    align-items: flex-start;
+}
+
+#about-container li {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+/*******************************
+Footer Section
+*******************************/
+#footer-container {
+    padding: 48px 0;
+}
+
+#social-links {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-container a {
+    margin: 0 14px;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #2A2A2A;
+    height: 56px;
+    width: 56px;
+}
+
+#footer-container a:hover {
+    background-color: #2E82FF;
+    animation: shrink 250ms linear;
+    transform: scale(0.90);
+}
+
+#footer-container svg {
+    fill: #FFFFFF;
+}
+
+#footer-container p {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #727272;
+}
+
+#footer-container span {
+    color: #E31B6D;
 }
