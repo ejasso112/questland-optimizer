@@ -69,9 +69,9 @@
 
     <nav class="section" id="nav-section">
         <div class="container" id="nav-container">
-            <a onclick="ActiveTabInstructions()" id="active">Instructions</a>
-            <a onclick="ActiveTabOptimize()">Optimize</a>
-            <a onclick="ActiveTabAbout()">About</a>
+            <a onclick="activeTabInstructions()" id="active">Instructions</a>
+            <a onclick="activeTabOptimize()">Optimize</a>
+            <a onclick="activeTabAbout()">About</a>
         </div>
     </nav>
 
@@ -141,22 +141,22 @@
                 <table class="guild-bonus-table" id="guild-bonus-table">
                     <tr>
                         <th><label>Attack:</label></th>
-                        <td><input onchange="guildBonusesUpdater()" type="number" id="attack-guild-bonus" min="0" value="0"> %</td>
+                        <td><input onchange="storeAttackGuildBonus()" type="number" id="attack-guild-bonus" min="0" value="0"> %</td>
                     </tr>
 
                     <tr>
                         <th><label>Defense:</label></th>
-                        <td><input onchange="guildBonusesUpdater()" type="number" id="defense-guild-bonus" min="0" value="0"> %</td>
+                        <td><input onchange="storeDefenseGuildBonus()" type="number" id="defense-guild-bonus" min="0" value="0"> %</td>
                     </tr>
                     
                     <tr>
                         <th><label>Health:</label></th>
-                        <td><input onchange="guildBonusesUpdater()" type="number" id="health-guild-bonus" min="0" value="0"> %</td>
+                        <td><input onchange="storeHealthGuildBonus()" type="number" id="health-guild-bonus" min="0" value="0"> %</td>
                     </tr>
 
                     <tr>
                         <th><label>Magic:</label></th>
-                        <td><input onchange="guildBonusesUpdater()" type="number" id="magic-guild-bonus" min="0" value="0"> %</td>
+                        <td><input onchange="storeMaginGuildBonus()" type="number" id="magic-guild-bonus" min="0" value="0"> %</td>
                     </tr>
                 </table>
             </div>
@@ -166,27 +166,27 @@
                     <h3>Collection 1 Percentages:</h3>
                     <table class="collection-percentages-table" id="collection-percentages-table-1">
                         <tr>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="health-1-percent" min="0" value="0"> %</td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="magic-1-percent" min="0" value="0"> %</td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="health-2-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeHealthPercent1()" type="number" id="health-1-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeMagicPercent1()" type="number" id="magic-1-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeHealthPercent2()" type="number" id="health-2-percent" min="0" value="0"> %</td>
                         </tr>
 
                         <tr>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="magic-2-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeMagicPercent2()" type="number" id="magic-2-percent" min="0" value="0"> %</td>
                             <td></td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="defense-1-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeDefensePercent1()" type="number" id="defense-1-percent" min="0" value="0"> %</td>
                         </tr>
 
                         <tr>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="attack-1-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeAttackPercent1()" type="number" id="attack-1-percent" min="0" value="0"> %</td>
                             <td></td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="attack-2-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeAttackPercent2()" type="number" id="attack-2-percent" min="0" value="0"> %</td>
                         </tr>
 
                         <tr>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="defense-2-percent" min="0" value="0"> %</td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="health-3-percent" min="0" value="0"> %</td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="magic-3-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeDefensePercent2()" type="number" id="defense-2-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeHealthPercent3()" type="number" id="health-3-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeMagicPercent3()" type="number" id="magic-3-percent" min="0" value="0"> %</td>
                         </tr>
                     </table>
                 </div>
@@ -195,27 +195,27 @@
                     <h3>Collection 2 Percentages:</h3>
                     <table class="collection-percentages-table"  id="collection-percentages-table-2">
                         <tr>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="attack-3-percent" min="0" value="0"> %</td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="defense-3-percent" min="0" value="0"> %</td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="attack-4-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeAttackPercent3()" type="number" id="attack-3-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeDefensePercent3()" type="number" id="defense-3-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeAttackPercent4()" type="number" id="attack-4-percent" min="0" value="0"> %</td>
                         </tr>
 
                         <tr>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="defense-4-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeDefensePercent4()" type="number" id="defense-4-percent" min="0" value="0"> %</td>
                             <td></td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="magic-4-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeMagicPercent4()" type="number" id="magic-4-percent" min="0" value="0"> %</td>
                         </tr>
 
                         <tr>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="health-4-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeHealthPercent4()" type="number" id="health-4-percent" min="0" value="0"> %</td>
                             <td></td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="health-5-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeHealthPercent5()" type="number" id="health-5-percent" min="0" value="0"> %</td>
                         </tr>
 
                         <tr>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="magic-5-percent" min="0" value="0"> %</td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="attack-5-percent" min="0" value="0"> %</td>
-                            <td><input onchange="collectionsBonusUpdater()" type="number" id="defense-5-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeMagicPercent5()" type="number" id="magic-5-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeAttackPercent5()" type="number" id="attack-5-percent" min="0" value="0"> %</td>
+                            <td><input onchange="storeDefensePercent5()" type="number" id="defense-5-percent" min="0" value="0"> %</td>
                         </tr>
                     </table>
                 </div>
@@ -232,49 +232,49 @@
                     </tr>
                     
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece1(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
                         <td class="awake-lv-c"></td>
                         <td class="boost-lv-c"></td>
                         <td class="output-c"><output class="output" name="gear-1-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece2(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
                         <td class="awake-lv-c"></td>
                         <td class="boost-lv-c"></td>
                         <td class="output-c"><output class="output" name="gear-2-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece3(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
                         <td class="awake-lv-c"></td>
                         <td class="boost-lv-c"></td>
                         <td class="output-c"><output class="output" name="gear-3-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece4(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
                         <td class="awake-lv-c"></td>
                         <td class="boost-lv-c"></td>
                         <td class="output-c"><output class="output" name="gear-4-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece5(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
                         <td class="awake-lv-c"></td>
                         <td class="boost-lv-c"></td>
                         <td class="output-c"><output class="output" name="gear-5-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece6(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
                         <td class="awake-lv-c"></td>
                         <td class="boost-lv-c"></td>
                         <td class="output-c"><output class="output" name="gear-6-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece7(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
                         <td class="awake-lv-c"></td>
                         <td class="boost-lv-c"></td>
                         <td class="output-c"><output class="output" name="gear-7-links" for="a b">0</output></td>
@@ -293,149 +293,149 @@
                     </tr>
                     
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-1-awake" name="collection-gear-1-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-1-boost" name="collection-gear-1-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece8(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv1()" type="number" id="collection-gear-1-awake" name="collection-gear-1-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv1()" type="number" id="collection-gear-1-boost" name="collection-gear-1-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-1-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-2-awake" name="collection-gear-2-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-2-boost" name="collection-gear-2-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece9(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv2()" type="number" id="collection-gear-2-awake" name="collection-gear-2-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv2()" type="number" id="collection-gear-2-boost" name="collection-gear-2-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-2-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-3-awake" name="collection-gear-3-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-3-boost" name="collection-gear-3-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece10(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv3()" type="number" id="collection-gear-3-awake" name="collection-gear-3-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv3()" type="number" id="collection-gear-3-boost" name="collection-gear-3-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-3-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-4-awake" name="collection-gear-4-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-4-boost" name="collection-gear-4-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece11(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv4()" type="number" id="collection-gear-4-awake" name="collection-gear-4-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv4()" type="number" id="collection-gear-4-boost" name="collection-gear-4-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="gear-4-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-5-awake" name="collection-gear-5-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-5-boost" name="collection-gear-5-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece12(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv5()" type="number" id="collection-gear-5-awake" name="collection-gear-5-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv5()" type="number" id="collection-gear-5-boost" name="collection-gear-5-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-5-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-6-awake" name="collection-gear-6-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-6-boost" name="collection-gear-6-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece13(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv6()" type="number" id="collection-gear-6-awake" name="collection-gear-6-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv6()" type="number" id="collection-gear-6-boost" name="collection-gear-6-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-6-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-7-awake" name="collection-gear-7-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-7-boost" name="collection-gear-7-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece14(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv7()" type="number" id="collection-gear-7-awake" name="collection-gear-7-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv7()" type="number" id="collection-gear-7-boost" name="collection-gear-7-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-7-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-8-awake" name="collection-gear-8-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-8-boost" name="collection-gear-8-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece15(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv8()" type="number" id="collection-gear-8-awake" name="collection-gear-8-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv8()" type="number" id="collection-gear-8-boost" name="collection-gear-8-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-8-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-9-awake" name="collection-gear-9-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-9-boost" name="collection-gear-9-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece16(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv9()" type="number" id="collection-gear-9-awake" name="collection-gear-9-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv9()" type="number" id="collection-gear-9-boost" name="collection-gear-9-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-9-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-10-awake" name="collection-gear-10-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-10-boost" name="collection-gear-10-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece17(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv10()" type="number" id="collection-gear-10-awake" name="collection-gear-10-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv10()" type="number" id="collection-gear-10-boost" name="collection-gear-10-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-10-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-11-awake" name="collection-gear-11-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-11-boost" name="collection-gear-11-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece18(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv11()" type="number" id="collection-gear-11-awake" name="collection-gear-11-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv11()" type="number" id="collection-gear-11-boost" name="collection-gear-11-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-11-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-12-awake" name="collection-gear-12-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-12-boost" name="collection-gear-12-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece19(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv12()" type="number" id="collection-gear-12-awake" name="collection-gear-12-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv12()" type="number" id="collection-gear-12-boost" name="collection-gear-12-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-12-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-13-awake" name="collection-gear-13-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-13-boost" name="collection-gear-13-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece20(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv13()" type="number" id="collection-gear-13-awake" name="collection-gear-13-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv13()" type="number" id="collection-gear-13-boost" name="collection-gear-13-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-13-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-14-awake" name="collection-gear-14-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-14-boost" name="collection-gear-14-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece21(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv14()" type="number" id="collection-gear-14-awake" name="collection-gear-14-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv14()" type="number" id="collection-gear-14-boost" name="collection-gear-14-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-14-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-15-awake" name="collection-gear-15-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-15-boost" name="collection-gear-15-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece22(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv15()" type="number" id="collection-gear-15-awake" name="collection-gear-15-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv15()" type="number" id="collection-gear-15-boost" name="collection-gear-15-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-15-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-16-awake" name="collection-gear-16-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-16-boost" name="collection-gear-16-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece23(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv16()" type="number" id="collection-gear-16-awake" name="collection-gear-16-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv16()" type="number" id="collection-gear-16-boost" name="collection-gear-16-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-16-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-17-awake" name="collection-gear-17-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-17-boost" name="collection-gear-17-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece24(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv17()" type="number" id="collection-gear-17-awake" name="collection-gear-17-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv17()" type="number" id="collection-gear-17-boost" name="collection-gear-17-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-17-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-18-awake" name="collection-gear-18-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-18-boost" name="collection-gear-18-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece25(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv18()" type="number" id="collection-gear-18-awake" name="collection-gear-18-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv18()" type="number" id="collection-gear-18-boost" name="collection-gear-18-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-18-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-19-awake" name="collection-gear-19-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-19-boost" name="collection-gear-19-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece26(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv19()" type="number" id="collection-gear-19-awake" name="collection-gear-19-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv19()" type="number" id="collection-gear-19-boost" name="collection-gear-19-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-19-links" for="a b">0</output></td>
                     </tr>
 
                     <tr>
-                        <td class="gear-piece-c"><select class="gear" onchange="gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
-                        <td class="awake-lv-c"><input class="awake-lv" onchange="awakeUpdater()" type="number" id="collection-gear-20-awake" name="collection-gear-20-awake" min="0" value="0"></td>
-                        <td class="boost-lv-c"><input class="boost-lv" onchange="boostUpdater()" type="number" id="collection-gear-20-boost" name="collection-gear-20-boost" min="1" value="1"></td>
+                        <td class="gear-piece-c"><select class="gear" onchange="storeGearPiece27(); gearUpdater()"><option disabled selected value>Select a Gear Piece</option></select></td>
+                        <td class="awake-lv-c"><input class="awake-lv" onchange="storeCollectionAwakeLv20()" type="number" id="collection-gear-20-awake" name="collection-gear-20-awake" min="0" value="0"></td>
+                        <td class="boost-lv-c"><input class="boost-lv" onchange="storeCollectionBoostLv20()" type="number" id="collection-gear-20-boost" name="collection-gear-20-boost" min="1" value="1"></td>
                         <td class="output-c"><output class="output" name="collection-gear-20-links" for="a b">0</output></td>
                     </tr>
                 </table>
             </div>
 
             <div id="button-container">
-                <button onclick="opimizationCalculator()" type="button">Optimize!</button>
+                <button onclick="onClickOptimize()" type="button">Optimize!</button>
             </div>
 
             <div id="collection-1-optimized">
@@ -504,6 +504,12 @@
             
             <h1>Changelog:</h1>
             <ul>
+                <h2>v0.3.0</h2>
+                <li>Implemented Local Storage</li>
+                <li>Slight Algorithms Rework</li>
+            </ul>
+
+            <ul>
                 <h2>v0.2.2</h2>
                 <li>Added "BOOMING BLADE" gear piece</li>
                 <li>Added "SPHERE OF THE TEMPEST" gear piece</li>
@@ -559,10 +565,8 @@
             
             <h1>Upcoming Features:</h1>
             <ul>
-                <li>Modification of the Optimizer's interface</li>
-                <li>Rework of the optimization algorithims</li>
                 <li>Implementation of the Guild Bonuses Input Fields to be used for the final otimization calculation</li>
-                <li>Implementation of local storage to save inputed values for when revising the site</li>
+                <li>Modifications to the Instructions Tab</li>
             </ul>
         </div>
     </section>
