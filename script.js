@@ -709,23 +709,24 @@ onLoadJsonData()
 /*----------------------------------------------------------------------------------
 --------------------------------Gear Setup Updater----------------------------------
 ----------------------------------------------------------------------------------*/
+
 // Array to store seleceted gear pieces [Name, index in json_data]
-setup_array = [
-["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0],
-["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0],
-["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0], ["", 0]]
-    
+setup_stats_array = [
+    ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0],
+    ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0],
+    ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0], ["", 0, 0, 0, 0, "", 0]]
+
 // Function that updates setup_array to hold current data
-function gearUpdater(){
-    console.log("Runing")
+function gearUpdater(){  
     get_gear = document.getElementsByClassName("gear")
+
     for (i = 0; i < get_gear.length; i++) {
         curr_gear_piece = get_gear[i].value
         curr_gear_index = get_gear[i].options[get_gear[i].selectedIndex].id
-        if(curr_gear_piece != "" && curr_gear_piece != setup_array[i][0]) {
-            setup_array[i][0] = curr_gear_piece
-            setup_array[i][1] = curr_gear_index
-            gearStatsUpdater(i, curr_gear_index)
+
+        if(curr_gear_piece != "" && curr_gear_piece != setup_stats_array[i][0]) {
+            setup_stats_array[i][0] = curr_gear_piece
+            gearStatsUpdater(i, curr_gear_index, links_array)
         }
     }
 }
@@ -734,71 +735,76 @@ function gearUpdater(){
 --------------------------------Gear Stats Updater----------------------------------
 ----------------------------------------------------------------------------------*/
 // 2D array that stores all the stats of a gear piece in the associated index
-setup_stats = [
-[0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""],
-[0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""],
-[0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""], [0, 0, 0, 0, "", "", "", ""]]
-
+links_array = [
+    ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""],
+    ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""],
+    ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""], ["", "", ""]]
+  
 /* Function that updates the setup_stats array (index of curr gear piece in the setup_array, 
 index of curr gear piece in the json_data array) */
-function gearStatsUpdater(setup_pos, data_pos) {
-    setup_stats[setup_pos][0] = parseInt(json_data[data_pos].Health)
-    setup_stats[setup_pos][1] = parseInt(json_data[data_pos].Attack)
-    setup_stats[setup_pos][2] = parseInt(json_data[data_pos].Defense)
-    setup_stats[setup_pos][3] = parseInt(json_data[data_pos].Magic)
-    setup_stats[setup_pos][4] = json_data[data_pos].Link_1
-    setup_stats[setup_pos][5] = json_data[data_pos].Link_2
-    setup_stats[setup_pos][6] = json_data[data_pos].Link_3
-    setup_stats[setup_pos][7] = json_data[data_pos].Boost
+function gearStatsUpdater(curr_gear, curr_gear_id) {
+    setup_stats_array[curr_gear][1] = parseInt(json_data[curr_gear_id].Health)
+    setup_stats_array[curr_gear][2] = parseInt(json_data[curr_gear_id].Attack)
+    setup_stats_array[curr_gear][3] = parseInt(json_data[curr_gear_id].Defense)
+    setup_stats_array[curr_gear][4] = parseInt(json_data[curr_gear_id].Magic)
+    setup_stats_array[curr_gear][5] = json_data[curr_gear_id].Boost
+
+    links_array[curr_gear][0] = json_data[curr_gear_id].Link_1
+    links_array[curr_gear][1] = json_data[curr_gear_id].Link_2
+    links_array[curr_gear][2] = json_data[curr_gear_id].Link_3
+
     linkConnectionUpdater()
 }
 
-link_count_array = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 function linkConnectionUpdater() {
-    for (curr_gear_index = 0; curr_gear_index < setup_array.length; curr_gear_index++) {
+    for (curr_gear_index = 0; curr_gear_index < setup_stats_array.length; curr_gear_index++) {
         links= 0
-        if(setup_array[curr_gear_index][0] != ""){
-            for(other_gear_index = 0; other_gear_index < setup_array.length; other_gear_index++){
-                if(setup_array[other_gear_index][0] != "") {
-                    if(setup_array[other_gear_index][0] == setup_stats[curr_gear_index][4])
+        if(setup_stats_array[curr_gear_index][0] != "") {
+            for(other_gear_index = 0; other_gear_index < setup_stats_array.length; other_gear_index++) {
+                if(setup_stats_array[other_gear_index][0] != "" && setup_stats_array[curr_gear_index][0] != setup_stats_array[other_gear_index][0]) {
+                    if(setup_stats_array[other_gear_index][0] == links_array[curr_gear_index][0])
                         links += 1
-                    if(setup_array[other_gear_index][0] == setup_stats[curr_gear_index][5])
+                    if(setup_stats_array[other_gear_index][0] == links_array[curr_gear_index][1])
                         links += 1
-                    if(setup_array[other_gear_index][0] == setup_stats[curr_gear_index][6])
+                    if(setup_stats_array[other_gear_index][0] == links_array[curr_gear_index][2])
                         links += 1
                 }
             }
         }
         link_set = document.getElementsByClassName("output")[curr_gear_index]
         link_set.innerHTML = links
-        link_count_array[curr_gear_index] = links   
+        setup_stats_array[curr_gear_index][6] = links   
     }
 }
 
-/*----------------------------------------------------------------------------------
--------------------------------Guild Bonus Updater----------------------------------
-----------------------------------------------------------------------------------*/
-//Variables to store the guild health, aattck, defense, and magic boost percentages
-guild_health_bonus = 0
-gulid_attack_bonus = 0
-guild_defense_bonus = 0
-guild_magic_bonus = 0
-
-// Function that updates the guild boost percentages
 function guildBonusesUpdater() {
     guild_health_bonus = document.getElementById("health-guild-bonus").value / 100
     gulid_attack_bonus = document.getElementById("attack-guild-bonus").value / 100
     guild_defense_bonus = document.getElementById("defense-guild-bonus").value / 100
     guild_magic_bonus = document.getElementById("magic-guild-bonus").value / 100
+
+    return [guild_health_bonus, gulid_attack_bonus, guild_defense_bonus, guild_magic_bonus]
 }
 
+function guildBonusCalculator(guild_bonus_array, stats_array) {
+    updated_stats = stats_array.map(function(arr) {
+        return arr.slice();
+    });
+
+    for (i = 0; i < updated_stats.length; i++) {
+        if (updated_stats[i][0] != ""){
+            updated_stats[i][1] = updated_stats[i][1] * (1+guild_bonus_array[0])
+            updated_stats[i][2] = updated_stats[i][2] * (1+guild_bonus_array[1])
+            updated_stats[i][3] = updated_stats[i][3] * (1+guild_bonus_array[2])
+            updated_stats[i][4] = updated_stats[i][4] * (1+guild_bonus_array[3])
+        }
+    }
+    return updated_stats
+}
 
 /*----------------------------------------------------------------------------------
 -----------------------------Collection Bonus Updater-------------------------------
 ----------------------------------------------------------------------------------*/
-// Arrays to store collections health, aattck, defense, and magic boost percentages
-collection_percentage_array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
 // Function that updates the collection boost percentages
 function collectionsBonusUpdater() {
     health_1_percent = document.getElementById("health-1-percent").value / 100
@@ -821,236 +827,300 @@ function collectionsBonusUpdater() {
     magic_3_percent = document.getElementById("magic-3-percent").value / 100
     magic_4_percent = document.getElementById("magic-4-percent").value / 100
     magic_5_percent = document.getElementById("magic-5-percent").value / 100
-    collection_percentage_array = [
+    return [
         health_1_percent, health_2_percent, health_3_percent, health_4_percent, health_5_percent,
         attack_1_percent, attack_2_percent, attack_3_percent, attack_4_percent, attack_5_percent,
         defense_1_percent, defense_2_percent, defense_3_percent, defense_4_percent, defense_5_percent,
-        magic_1_percent, magic_2_percent, magic_3_percent, magic_4_percent, magic_5_percent
-    ]
+        magic_1_percent, magic_2_percent, magic_3_percent, magic_4_percent, magic_5_percent]
 }
-awake_array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+/* ------------------------------------------*/
 function awakeUpdater(){
+    awake_array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     get_awake_lv = document.getElementsByClassName("awake-lv")
 
     for (i = 0; i < get_awake_lv.length; i++) {
         curr_awake_lv = get_awake_lv[i].value
-        if (awake_array[i] != curr_awake_lv) {
-            awake_array[i] = parseInt(curr_awake_lv)
+        if (awake_array[i + 7] != curr_awake_lv) {
+            awake_array[i + 7] = parseInt(curr_awake_lv)
         }
     }
-    awakeStatsCalculator()
+    return awake_array
 }
 
-boost_array = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+function awakeStatsCalculator(awake_array, stats_array) {
+    updated_stats = stats_array.map(function(arr) {
+        return arr.slice();
+    });
+
+    for (i = 0; i < updated_stats.length; i++) {
+        if (updated_stats[i][0] != ""){
+            updated_stats[i][1] = updated_stats[i][1] * (1.20)**(awake_array[i])
+            updated_stats[i][2] = updated_stats[i][2] * (1.20)**(awake_array[i])
+            updated_stats[i][3] = updated_stats[i][3] * (1.20)**(awake_array[i])
+            updated_stats[i][4] = updated_stats[i][4] * (1.20)**(awake_array[i])
+        }
+    }
+    return updated_stats
+}
+
+
 function boostUpdater(){
+    boost_array = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     get_boost_lv = document.getElementsByClassName("boost-lv")
 
     for (i = 0; i < get_boost_lv.length; i++) {
         curr_boost_lv = get_boost_lv[i].value
-        if (boost_array[i] != curr_boost_lv) {
-            boost_array[i] = parseInt(curr_boost_lv)
+        if (boost_array[i + 7] != curr_boost_lv) {
+            boost_array[i + 7] = parseInt(curr_boost_lv)
         }
     }
-    boostStatsCalculator()
+    return boost_array
 }
+  
+function boostStatsCalculator(awake_array, boost_array, stats_array) {
+    updated_stats = stats_array.map(function(arr) {
+        return arr.slice();
+    });
 
-//setup stats
-//awake array
-gear_awake_stats_array = [
-[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0],
-[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0],
-[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-
-function awakeStatsCalculator(){
-    for (i = 0; i < setup_array.length; i++){
-        if (setup_array[i][0] != ""){
-            this_awake_lv = awake_array[i]
-            gear_awake_stats_array[i][0] = setup_stats[i][0] * (1.20)**(this_awake_lv)
-            gear_awake_stats_array[i][1] = setup_stats[i][1] * (1.20)**(this_awake_lv)
-            gear_awake_stats_array[i][2] = setup_stats[i][2] * (1.20)**(this_awake_lv)
-            gear_awake_stats_array[i][3] = setup_stats[i][3] * (1.20)**(this_awake_lv)
-        }
-    }
-}
-
-gear_boost_stats_array = [
-[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0],
-[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0],
-[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-    
-function boostStatsCalculator(){
-    for (i = 0; i < setup_array.length; i++){
-        if (setup_array[i][0] != ""){
-            this_awake_lv = awake_array[i]
-            this_boost_lv = boost_array[i]
-            if (this_awake_lv == 0)
+    for (i = 0; i < updated_stats.length; i++){
+        if (updated_stats[i][0] != "") {
+            if (awake_array[i] == 0)
                 boost_mult = 1.002
             else
-                boost_mult = 1.002 + this_awake_lv/1000
+                boost_mult = 1.002 + awake_array[i]/1000
 
-            gear_boost_stats_array[i][0] = gear_awake_stats_array[i][0] * (boost_mult)**(this_boost_lv - 1)
-            gear_boost_stats_array[i][1] = gear_awake_stats_array[i][1] * (boost_mult)**(this_boost_lv - 1)
-            gear_boost_stats_array[i][2] = gear_awake_stats_array[i][2] * (boost_mult)**(this_boost_lv - 1)
-            gear_boost_stats_array[i][3] = gear_awake_stats_array[i][3] * (boost_mult)**(this_boost_lv - 1)
+            updated_stats[i][1] = updated_stats[i][1] * (boost_mult)**(boost_array[i] - 1)
+            updated_stats[i][2] = updated_stats[i][2] * (boost_mult)**(boost_array[i] - 1)
+            updated_stats[i][3] = updated_stats[i][3] * (boost_mult)**(boost_array[i] - 1)
+            updated_stats[i][4] = updated_stats[i][4] * (boost_mult)**(boost_array[i] - 1)
         }
     }
+    return updated_stats
 }
 
-link_boost_stats_array = [
-[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0],
-[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0],
-[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
-        
-function linkStatsCalculator(){
-    for (i = 0; i < setup_array.length; i++){
-        if (setup_array[i][0] != ""){
-            this_boost_name = setup_stats[i][7]
+function linkStatsCalculator(stats_array){
+    updated_stats = stats_array.map(function(arr) {
+        return arr.slice();
+    });
 
-            if (this_boost_name == "HEALTH" && link_count_array[i] > 1){
-                link_boost_stats_array[i][0] = Math.round(gear_boost_stats_array[i][0] * 1.3)
-                link_boost_stats_array[i][1] = Math.round(gear_boost_stats_array[i][1])
-                link_boost_stats_array[i][2] = Math.round(gear_boost_stats_array[i][2])
-                link_boost_stats_array[i][3] = Math.round(gear_boost_stats_array[i][3])
+    for (i = 0; i < updated_stats.length; i++){
+        if (updated_stats[i][0] != ""){
+
+            if (updated_stats[i][5] == "HEALTH" && updated_stats[i][6] > 1){
+                updated_stats[i][1] = Math.round(updated_stats[i][1] * 1.3)
+                updated_stats[i][2] = Math.round(updated_stats[i][2])
+                updated_stats[i][3] = Math.round(updated_stats[i][3])
+                updated_stats[i][4] = Math.round(updated_stats[i][4])
             }
-            else if (this_boost_name == "ATTACK" && link_count_array[i] > 1){
-                link_boost_stats_array[i][0] = Math.round(gear_boost_stats_array[i][0])
-                link_boost_stats_array[i][1] = Math.round(gear_boost_stats_array[i][1] * 1.3)
-                link_boost_stats_array[i][2] = Math.round(gear_boost_stats_array[i][2])
-                link_boost_stats_array[i][3] = Math.round(gear_boost_stats_array[i][3])
+            else if (updated_stats[i][5] == "ATTACK" && updated_stats[i][6] > 1){
+                updated_stats[i][1] = Math.round(updated_stats[i][1])
+                updated_stats[i][2] = Math.round(updated_stats[i][2] * 1.3)
+                updated_stats[i][3] = Math.round(updated_stats[i][3])
+                updated_stats[i][4] = Math.round(updated_stats[i][4])
             }
-            else if (this_boost_name == "DEFENSE" && link_count_array[i] > 1){
-                link_boost_stats_array[i][0] = Math.round(gear_boost_stats_array[i][0])
-                link_boost_stats_array[i][1] = Math.round(gear_boost_stats_array[i][1])
-                link_boost_stats_array[i][2] = Math.round(gear_boost_stats_array[i][2] * 1.3)
-                link_boost_stats_array[i][3] = Math.round(gear_boost_stats_array[i][3])
+            else if (updated_stats[i][5] == "DEFENSE" && updated_stats[i][6] > 1){
+                updated_stats[i][1] = Math.round(updated_stats[i][1])
+                updated_stats[i][2] = Math.round(updated_stats[i][2])
+                updated_stats[i][3] = Math.round(updated_stats[i][3] * 1.3)
+                updated_stats[i][4] = Math.round(updated_stats[i][4])
             }
-            else if (this_boost_name == "MAGIC" && link_count_array[i] > 1){
-                link_boost_stats_array[i][0] = Math.round(gear_boost_stats_array[i][0])
-                link_boost_stats_array[i][1] = Math.round(gear_boost_stats_array[i][1])
-                link_boost_stats_array[i][2] = Math.round(gear_boost_stats_array[i][2])
-                link_boost_stats_array[i][3] = Math.round(gear_boost_stats_array[i][3] * 1.3)
+            else if (updated_stats[i][5] == "MAGIC" && updated_stats[i][6] > 1){
+                updated_stats[i][1] = Math.round(updated_stats[i][1])
+                updated_stats[i][2] = Math.round(updated_stats[i][2])
+                updated_stats[i][3] = Math.round(updated_stats[i][3])
+                updated_stats[i][4] = Math.round(updated_stats[i][4] * 1.3)
             }
             else {
-                link_boost_stats_array[i][0] = Math.round(gear_boost_stats_array[i][0])
-                link_boost_stats_array[i][1] = Math.round(gear_boost_stats_array[i][1])
-                link_boost_stats_array[i][2] = Math.round(gear_boost_stats_array[i][2])
-                link_boost_stats_array[i][3] = Math.round(gear_boost_stats_array[i][3])
+                updated_stats[i][1] = Math.round(updated_stats[i][1])
+                updated_stats[i][2] = Math.round(updated_stats[i][2])
+                updated_stats[i][3] = Math.round(updated_stats[i][3])
+                updated_stats[i][4] = Math.round(updated_stats[i][4])
             }
         }
     }
-    console.log(link_boost_stats_array)
+    return updated_stats
 }
 
-function gearOptimize(gear1_stats, gear2_stats, gear1_percent, gear2_percent, gear1_index, gear2_index, i, l, bool_){
-    gear1_full = gear1_stats[gear1_index] * gear1_percent
-    gear2_full = gear2_stats[gear2_index] * gear2_percent
+function swap(stats_array, gear1_index, gear2_index) {
+    temp = stats_array[gear1_index]
+    stats_array[gear1_index] = stats_array[gear2_index]
+    stats_array[gear2_index] = temp;
+}
 
-    gear1_swap = gear1_stats[gear2_index] * gear2_percent
-    gear2_swap = gear2_stats[gear1_index] * gear1_percent
+function isSwap(gear1_stats, gear2_stats, gear1_attr, gear2_attr, gear1_percent, gear2_percent){
+    gear1_original = gear1_stats[gear1_attr  + 1] * gear1_percent
+    gear2_original = gear2_stats[gear2_attr + 1] * gear2_percent
 
-    original_setup = gear1_full + gear2_full
+    gear1_swap = gear1_stats[gear2_attr + 1] * gear2_percent
+    gear2_swap = gear2_stats[gear1_attr + 1] * gear1_percent
+
+    original_setup = gear1_original + gear2_original
     swapped_setup = gear1_swap + gear2_swap
 
-    if(swapped_setup > original_setup){
-        temp = link_boost_stats_array[i]
-        link_boost_stats_array[i] = link_boost_stats_array[l]
-        link_boost_stats_array[l] = temp
-
-        temp2 = setup_array[i]
-        setup_array[i] = setup_array[l]
-        setup_array[l] = temp2
-        return false
+    if(swapped_setup > original_setup){ 
+        return true
     }
-    else return bool_
+    else return false
 }
 
-function opimizationCalculator(){
-    are_same = false
-    while(are_same != true) {
-        are_same = true
-        for(i = 7; i < link_boost_stats_array.length; i++){
-            i_index = i - 7
-            for(l = 7; l < link_boost_stats_array.length; l++){
-                l_index = l - 7
-                if(i_index < 5){
-                    if(l_index < 5)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 0, 0, i, l, are_same)
-                    else if(l_index < 10)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 0, 1, i, l, are_same)
-                    else if(l_index < 15)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 0, 2, i, l, are_same)
-                    else if(l_index < 20)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 0, 3, i, l, are_same)
+function opimizationCalculator(collection_percents, gear_stats_array){
+    isSame = false
+    while(isSame != true) {
+        isSame = true
+        for(gear1_index = 7; gear1_index< gear_stats_array.length; gear1_index++){
+            gear1_real_index = gear1_index - 7
+
+            for(gear2_index = 7; gear2_index < gear_stats_array.length; gear2_index++){
+                gear2_real_index = gear2_index - 7
+
+                if(gear1_real_index < 5) {
+                    if(gear2_real_index < 5) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 0, 0, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 10) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 0, 1, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 15) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 0, 2, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 20) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 0, 3, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
                 }
-                else if(i_index < 10){
-                    if(l_index < 5)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 1, 0, i, l, are_same)
-                    else if(l_index < 10)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 1, 1, i, l, are_same)
-                    else if(l_index < 15)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 1, 2, i, l, are_same)
-                    else if(l_index < 20)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 1, 3, i, l, are_same)
+
+                else if(gear1_real_index < 10) {
+                    if(gear2_real_index < 5) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 1, 0, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 10) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 1, 1, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 15) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 1, 2, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 20) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 1, 3, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
                 }
-                else if(i_index < 15){
-                    if(l_index < 5)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 2, 0, i, l, are_same)
-                    else if(l_index < 10)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 2, 1, i, l, are_same)
-                    else if(l_index < 15)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 2, 2, i, l, are_same)
-                    else if(l_index < 20)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 2, 3, i, l, are_same)
+
+                else if(gear1_real_index < 15) {
+                    if(gear2_real_index < 5) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 2, 0, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 10) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 2, 1, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 15) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 2, 2, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 20) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 2, 3, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
                 }
-                else if(i_index < 20){
-                    if(l_index < 5)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 3, 0, i, l, are_same)
-                    else if(l_index < 10)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 3, 1, i, l, are_same)
-                    else if(l_index < 15)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 3, 2, i, l, are_same)
-                    else if(l_index < 20)
-                        are_same = gearOptimize(link_boost_stats_array[i], link_boost_stats_array[l], collection_percentage_array[i_index], collection_percentage_array[l_index], 3, 3, i, l, are_same)
+
+                else if(gear1_real_index < 20) {
+                    if(gear2_real_index < 5) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 3, 0, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 10) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 3, 1, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 15) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 3, 2, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
+                    else if(gear2_real_index < 20) {
+                        if(isSwap(gear_stats_array[gear1_index], gear_stats_array[gear2_index], 3, 3, collection_percents[gear1_real_index], collection_percents[gear2_real_index]) == true) {
+                            swap(gear_stats_array, gear1_index, gear2_index)
+                            isSame = false
+                        }
+                    }
                 }
             }
         }
     }
-    console.log(link_boost_stats_array)
-    console.log("collection 1:", "Health: ", link_boost_stats_array[7][0] + link_boost_stats_array[8][0] + link_boost_stats_array[9][0], " - Attack: ", link_boost_stats_array[12][1] + link_boost_stats_array[13][1], " - Defense: ", link_boost_stats_array[17][2] + link_boost_stats_array[18][2], " - Magic: ", link_boost_stats_array[22][3] + link_boost_stats_array[23][3] + link_boost_stats_array[24][3])
-    console.log("collection 2:", "Health: ", link_boost_stats_array[10][0] + link_boost_stats_array[11][0] ," - Attack: ", link_boost_stats_array[14][1] + link_boost_stats_array[15][1] + link_boost_stats_array[16][1], " - Defense: ", link_boost_stats_array[19][2] + link_boost_stats_array[20][2] + link_boost_stats_array[21][2], " - Magic: ", link_boost_stats_array[25][3] + link_boost_stats_array[26][3])
-    console.log(setup_array)
 
-    document.getElementById("health-1-name").innerHTML = setup_array[7][0];
-    document.getElementById("health-2-name").innerHTML = setup_array[8][0];
-    document.getElementById("health-3-name").innerHTML = setup_array[9][0];
-    document.getElementById("health-4-name").innerHTML = setup_array[10][0];
-    document.getElementById("health-5-name").innerHTML = setup_array[11][0];
+    document.getElementById("health-1-name").innerHTML = gear_stats_array[7][0];
+    document.getElementById("health-2-name").innerHTML = gear_stats_array[8][0];
+    document.getElementById("health-3-name").innerHTML = gear_stats_array[9][0];
+    document.getElementById("health-4-name").innerHTML = gear_stats_array[10][0];
+    document.getElementById("health-5-name").innerHTML = gear_stats_array[11][0];
 
-    document.getElementById("attack-1-name").innerHTML = setup_array[12][0];
-    document.getElementById("attack-2-name").innerHTML = setup_array[13][0];
-    document.getElementById("attack-3-name").innerHTML = setup_array[14][0];
-    document.getElementById("attack-4-name").innerHTML = setup_array[15][0];
-    document.getElementById("attack-5-name").innerHTML = setup_array[16][0];
+    document.getElementById("attack-1-name").innerHTML = gear_stats_array[12][0];
+    document.getElementById("attack-2-name").innerHTML = gear_stats_array[13][0];
+    document.getElementById("attack-3-name").innerHTML = gear_stats_array[14][0];
+    document.getElementById("attack-4-name").innerHTML = gear_stats_array[15][0];
+    document.getElementById("attack-5-name").innerHTML = gear_stats_array[16][0];
 
-    document.getElementById("defense-1-name").innerHTML = setup_array[17][0];
-    document.getElementById("defense-2-name").innerHTML = setup_array[18][0];
-    document.getElementById("defense-3-name").innerHTML = setup_array[19][0];
-    document.getElementById("defense-4-name").innerHTML = setup_array[20][0];
-    document.getElementById("defense-5-name").innerHTML = setup_array[21][0];
+    document.getElementById("defense-1-name").innerHTML = gear_stats_array[17][0];
+    document.getElementById("defense-2-name").innerHTML = gear_stats_array[18][0];
+    document.getElementById("defense-3-name").innerHTML = gear_stats_array[19][0];
+    document.getElementById("defense-4-name").innerHTML = gear_stats_array[20][0];
+    document.getElementById("defense-5-name").innerHTML = gear_stats_array[21][0];
 
-    document.getElementById("magic-1-name").innerHTML = setup_array[22][0];
-    document.getElementById("magic-2-name").innerHTML = setup_array[23][0];
-    document.getElementById("magic-3-name").innerHTML = setup_array[24][0];
-    document.getElementById("magic-4-name").innerHTML = setup_array[25][0];
-    document.getElementById("magic-5-name").innerHTML = setup_array[26][0];
-
+    document.getElementById("magic-1-name").innerHTML = gear_stats_array[22][0];
+    document.getElementById("magic-2-name").innerHTML = gear_stats_array[23][0];
+    document.getElementById("magic-3-name").innerHTML = gear_stats_array[24][0];
+    document.getElementById("magic-4-name").innerHTML = gear_stats_array[25][0];
+    document.getElementById("magic-5-name").innerHTML = gear_stats_array[26][0];
+    console.log(gear_stats_array)
 }
 
 function onClickOptimize() {
-    guildBonusesUpdater()
-    collectionsBonusUpdater()
-    awakeUpdater()
-    boostUpdater()
-    linkStatsCalculator()
-    opimizationCalculator()
+    guild_bonus_array = guildBonusesUpdater()
+    collection_bonus_array = collectionsBonusUpdater()
+    awake_lv_array = awakeUpdater()
+    boost_lv_array = boostUpdater()
+
+    setup_stats_with_awake = awakeStatsCalculator(awake_lv_array, setup_stats_array)
+    setup_stats_with_boost = boostStatsCalculator(awake_lv_array, boost_lv_array, setup_stats_with_awake)
+    setup_stats_with_links = linkStatsCalculator(setup_stats_with_boost)
+    console.log(setup_stats_with_links)
+    final_stats_with_buffs = guildBonusCalculator(guild_bonus_array, setup_stats_with_links)
+    console.log(final_stats_with_buffs)
+    opimizationCalculator(collection_bonus_array, final_stats_with_buffs)    
 }

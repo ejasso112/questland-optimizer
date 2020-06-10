@@ -1,6 +1,20 @@
 ﻿{
     "Gear": [
         {
+            "Name": "Locked Slot",
+            "Potential": "0",
+            "Mark": "-",
+            "Type": "-",
+            "Health": "0",
+            "Attack": "0",
+            "Defense": "0",
+            "Magic": "0",
+            "Link_1": "-",
+            "Link_2": "-",
+            "Link_3": "-",
+            "Boost": "-"
+        },
+        {
             "Name": "WINGED DEFENDER SHIELD",
             "Potential": "205",
             "Mark": "SACRED",
@@ -3834,6 +3848,48 @@
             "Link_1": "GRAPEVINE GLOVES",
             "Link_2": "CURSED ICEBERG ARMOR",
             "Link_3": "AIRWALKER BOOTS",
+            "Boost": "MAGIC"
+        },
+        {
+            "Name": "SEA HAG'S BLESSING",
+            "Potential": "217",
+            "Mark": "ABYSS",
+            "Type": "TALISMAN",
+            "Health": "4452",
+            "Attack": "7560",
+            "Defense": "3780",
+            "Magic": "3948",
+            "Link_1": "GRIPS OF THE DEPTHS",
+            "Link_2": "RING OF THE CURSED DEPTHS",
+            "Link_3": "SPHERE OF THE TEMPEST",
+            "Boost": "ATTACK"
+        },
+        {
+            "Name": "GRIPS OF THE DEPTHS",
+            "Potential": "215",
+            "Mark": "ABYSS",
+            "Type": "GLOVES",
+            "Health": "4482",
+            "Attack": "4686",
+            "Defense": "5603",
+            "Magic": "6501",
+            "Link_1": "RING OF THE CURSED DEPTHS",
+            "Link_2": "DREAD CAPTAIN'S MANTLE",
+            "Link_3": "KNIGHT OF THE TEMPEST ARMOR",
+            "Boost": "MAGIC"
+        },
+        {
+            "Name": "TOME OF THE CLEAR THOUGHTS",
+            "Potential": "177",
+            "Mark": "SACRED",
+            "Type": "TALISMAN",
+            "Health": "3503",
+            "Attack": "3941",
+            "Defense": "4817",
+            "Magic": "5255",
+            "Link_1": "GREAT PREDATOR CARAPACE",
+            "Link_2": "BASALT STOMPERS",
+            "Link_3": "GRAPEVINE GLOVES",
             "Boost": "MAGIC"
         }
     ]
