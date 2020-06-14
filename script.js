@@ -672,19 +672,76 @@ function sortByProperty(property){
 }
 
 /* Function that stores gear.json into json_data array */
-json_data = []
-function onLoadJsonData() {
-    
-    fetch('./gear.json')
+online_json_data = []
+function requestJsonData() {
+
+    fetch('https://questland-public-api.cfapps.io/items')
     .then(function(resp) {
         return resp.json();
     })
     .then(function(data) {
-        json_data = data.Gear
-        json_data.sort(sortByProperty("Name"))
-        for (i = 0; i < json_data.length; i++) {
-            currGear = json_data[i].Name
+        online_json_data = data
+        online_json_data.sort(sortByProperty("name"))
+        for (i = 0; i < online_json_data.length; i++) {
+            link_1_id = online_json_data[i].itemLink1
+            link_1_index = online_json_data.findIndex(obj => obj.id == link_1_id)
+            link_2_id = online_json_data[i].itemLink2
+            link_2_index = online_json_data.findIndex(obj => obj.id == link_2_id)
+            link_3_id = online_json_data[i].itemLink3
+            link_3_index = online_json_data.findIndex(obj => obj.id == link_3_id)
+            
+            online_json_data[i].name = (online_json_data[i].name).toUpperCase()
+
+            if(link_1_id && online_json_data[link_1_index]) {
+                online_json_data[i].itemLink1 = (online_json_data[link_1_index].name).toUpperCase()
+            }
+            if(link_2_id && online_json_data[link_2_index]) {
+                online_json_data[i].itemLink2 = (online_json_data[link_2_index].name).toUpperCase()
+            }
+            if(link_3_id && online_json_data[link_3_index]) {
+                online_json_data[i].itemLink3 = (online_json_data[link_3_index].name).toUpperCase()
+            }
+            
+            if(online_json_data[i].name[online_json_data[i].name.length - 1] == ' '){
+                online_json_data[i].name = online_json_data[i].name.slice(0, online_json_data[i].name.length - 1)
+            }
+
+            if(online_json_data[i].id == 5437){
+                console.log("here")
+                online_json_data[i].name = "locked slot"
+                online_json_data[i].attack = 0
+                online_json_data[i].defense = 0
+                online_json_data[i].health = 0
+                online_json_data[i].magic = 0
+                online_json_data[i].itemLink1 = "-"
+                online_json_data[i].itemLink2 = "-"
+                online_json_data[i].itemLink3 = "-"
+                online_json_data[i].boost = "-"
+            }
+        }
+        displayJSON()
+    })
+}
+
+function displayJSON() {/*
+    document.getElementsByClassName("loading-section")[0].style["display"] = "none"
+    document.getElementById("equipped-gear-table").style["filter"] = "none"
+    document.getElementById("blur1").style["filter"] = "none"
+    document.getElementsByClassName("loading-section")[1].style["display"] = "none"
+    document.getElementById("collections-gear-table").style["filter"] = "none"
+    document.getElementById("blur2").style["filter"] = "none"
+*/
+    document.getElementById("loading-section").style["display"] = "none"
+    document.getElementById("nav-section").style["filter"] = "none"
+    document.getElementsByClassName("main-section")[0].style["filter"] = "none"
+    document.getElementsByClassName("main-section")[1].style["filter"] = "none"
+    document.getElementsByClassName("main-section")[2].style["filter"] = "none"
+
+    for (i = 0; i < online_json_data.length; i++) {
+        if(online_json_data[i].quality == "LEGENDARY" || online_json_data[i].id == 5437) {
+            currGear = online_json_data[i].name
             doc_gear_select_array = document.getElementsByClassName("gear")
+            
             for (l = 0; l < doc_gear_select_array.length; l++) {
                 option = document.createElement("option")
                 option.id = i
@@ -692,10 +749,11 @@ function onLoadJsonData() {
                 doc_gear_select_array[l].add(option)
             }
         }
-        onLoadGear()
-    })
+    }
+    
+    onLoadGear()
+    console.log(links_array)
 }
-
 /*----------------------------------------------------------------------------------
 -------------------------------On Load Function Calls-------------------------------
 ----------------------------------------------------------------------------------*/
@@ -704,7 +762,7 @@ onLoadGuildBonuses()
 onLoadCollectionPercentages()
 onLoadAwakeLv()
 onLoadBoostLv()
-onLoadJsonData()
+requestJsonData()
 
 /*----------------------------------------------------------------------------------
 --------------------------------Gear Setup Updater----------------------------------
@@ -743,16 +801,20 @@ links_array = [
 /* Function that updates the setup_stats array (index of curr gear piece in the setup_array, 
 index of curr gear piece in the json_data array) */
 function gearStatsUpdater(curr_gear, curr_gear_id) {
-    setup_stats_array[curr_gear][1] = parseInt(json_data[curr_gear_id].Health)
-    setup_stats_array[curr_gear][2] = parseInt(json_data[curr_gear_id].Attack)
-    setup_stats_array[curr_gear][3] = parseInt(json_data[curr_gear_id].Defense)
-    setup_stats_array[curr_gear][4] = parseInt(json_data[curr_gear_id].Magic)
-    setup_stats_array[curr_gear][5] = json_data[curr_gear_id].Boost
-
-    links_array[curr_gear][0] = json_data[curr_gear_id].Link_1
-    links_array[curr_gear][1] = json_data[curr_gear_id].Link_2
-    links_array[curr_gear][2] = json_data[curr_gear_id].Link_3
-
+    setup_stats_array[curr_gear][1] = online_json_data[curr_gear_id].health
+    setup_stats_array[curr_gear][2] = online_json_data[curr_gear_id].attack
+    setup_stats_array[curr_gear][3] = online_json_data[curr_gear_id].defense
+    setup_stats_array[curr_gear][4] = online_json_data[curr_gear_id].magic
+    setup_stats_array[curr_gear][5] = online_json_data[curr_gear_id].itemBonus
+    if(online_json_data[curr_gear_id].itemLink1[online_json_data[curr_gear_id].itemLink1.length - 1] == ' ')
+        online_json_data[curr_gear_id].itemLink1 = online_json_data[curr_gear_id].itemLink1.slice(0, online_json_data[curr_gear_id].itemLink1.length - 1)
+    if(online_json_data[curr_gear_id].itemLink2[online_json_data[curr_gear_id].itemLink2.length - 1] == ' ')
+        online_json_data[curr_gear_id].itemLink2 = online_json_data[curr_gear_id].itemLink2.slice(0, online_json_data[curr_gear_id].itemLink2.length - 1)
+    if(online_json_data[curr_gear_id].itemLink3[online_json_data[curr_gear_id].itemLink3.length - 1] == ' ')
+        online_json_data[curr_gear_id].itemLink3 = online_json_data[curr_gear_id].itemLink3.slice(0, online_json_data[curr_gear_id].itemLink3.length - 1)
+    links_array[curr_gear][0] = online_json_data[curr_gear_id].itemLink1
+    links_array[curr_gear][1] = online_json_data[curr_gear_id].itemLink2
+    links_array[curr_gear][2] = online_json_data[curr_gear_id].itemLink3
     linkConnectionUpdater()
 }
 
@@ -1119,8 +1181,6 @@ function onClickOptimize() {
     setup_stats_with_awake = awakeStatsCalculator(awake_lv_array, setup_stats_array)
     setup_stats_with_boost = boostStatsCalculator(awake_lv_array, boost_lv_array, setup_stats_with_awake)
     setup_stats_with_links = linkStatsCalculator(setup_stats_with_boost)
-    console.log(setup_stats_with_links)
     final_stats_with_buffs = guildBonusCalculator(guild_bonus_array, setup_stats_with_links)
-    console.log(final_stats_with_buffs)
     opimizationCalculator(collection_bonus_array, final_stats_with_buffs)    
 }
