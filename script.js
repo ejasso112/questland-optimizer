@@ -675,7 +675,7 @@ function sortByProperty(property){
 online_json_data = []
 function requestJsonData() {
 
-    fetch('https://questland-public-api.cfapps.io/items')
+    fetch('https://questland-public-api-dot-questland-tools.uc.r.appspot.com/items?filterArtifacts=false')
     .then(function(resp) {
         return resp.json();
     })
@@ -707,7 +707,6 @@ function requestJsonData() {
             }
 
             if(online_json_data[i].id == 5437){
-                console.log("here")
                 online_json_data[i].name = "locked slot"
                 online_json_data[i].attack = 0
                 online_json_data[i].defense = 0
